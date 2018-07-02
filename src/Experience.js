@@ -18,7 +18,7 @@ const Experience = () =>{
     <div className="card-body">
       <h5 className="card-title">Encore</h5>
       <p className="card-text">A General contracting company where I would help build cabinets and redesign areas.</p>
-     
+      <p class="card-text"><small class="text-muted">8/25/2015 – 9/4/2016</small></p>
     </div>
   </div>
   <div className="card">
@@ -26,7 +26,7 @@ const Experience = () =>{
     <div className="card-body">
       <h5 className="card-title">Target</h5>
       <p className="card-text">While working at target I was part of the flexible fulfilment center. I would find, package, then ship out different items from the store. </p>
-      
+      <p class="card-text"><small class="text-muted">11/12/2016 – 1/10/2018</small></p>
     </div>
   </div>
   <div className="card">
@@ -34,7 +34,7 @@ const Experience = () =>{
     <div className="card-body">
       <h5 className="card-title">Lyft</h5>
       <p className="card-text">Ride-sharing company that evaluated your performance based on the customers input.</p>
-    
+      <p class="card-text align-bottom"><small class="text-muted">1/10/2018 - Now</small></p>
     </div>
   </div>
 </div>
