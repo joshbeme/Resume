@@ -17,7 +17,7 @@ class App extends Component {
       </div>
       <Navi />
 
-      <div className="container-fluid ">
+      <div className="container-fluid">
       
       <header href="" className="">
       
@@ -34,8 +34,10 @@ class App extends Component {
         <Skills/>
         <Experience />
       </header>
+      
+      </div>
       <Foot/>
-      </div></div>
+      </div>
     );
   }
 }

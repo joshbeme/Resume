@@ -13,7 +13,7 @@ const Experience = () =>{
  </div>
  <div className="card-deck pt-3">
 
-  <div className="card">
+  <div className="card ">
     <img className="card-img-top h-50" src= {encore} alt="" />
     <div className="card-body">
       <h5 className="card-title">Encore</h5>
