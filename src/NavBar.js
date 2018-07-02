@@ -4,17 +4,17 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const navi = () =>{
     return(
-<nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav className="navbar navbar-expand-md navbar-light  sticky-top" style={{backgroundColor:"#4b5259"}} >
   <a className="navbar-brand order-1" href="">Joshua O</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
-  <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-    <div className="navbar-nav ">
-      <a className="nav-item nav-link" href="#Home">Home <span className="sr-only">(current)</span></a>
-      <a className="nav-item nav-link" href="#About">About</a>
-      <a className="nav-item nav-link" href="#Experience">Experience</a>
-      <a className="nav-item nav-link" href="">Education</a>
+  <div className="collapse navbar-collapse " style={{backgroundColor:"#4b5259"}} id="navbarNavAltMarkup">
+    <div className="navbar-nav  "  style={{backgroundColor:"#4b5259"}}>
+      <a className="nav-item nav-link text-light" href="#Home">Home <span className="sr-only">(current)</span></a>
+      <a className="nav-item nav-link text-light" href="#About">About</a>
+      <a className="nav-item nav-link text-light" href="#Skills">Skills</a>
+      <a className="nav-item nav-link text-light" href="#Experience">Experience</a>
     </div>
   </div>
 </nav>

@@ -5,34 +5,36 @@ import Experience from './Experience.js';
 // import Heading from './Head.js'
 import heading from './assets/Head.jpg';
 import About from './About.js';
+import Skills from './Skills.js';
+import Foot from './Footer.js';
 
 class App extends Component {
   render() {
     return (
-      <div>
-      {/* <Heading/> */}
-      <img className="img-fluid px-0 mx-0" src={heading} />
+      <div className="">
+      {/* <Heading/> */}<div className="d-flex flex-row w-100 h-100 ">
+      <img className="w-100"  src={heading} />
+      </div>
       <Navi />
 
-      <div className="container">
+      <div className="container-fluid ">
       
-      <header href="" className="d-fluid">
+      <header href="" className="">
       
 
       <div  >
         <div id="Home" className="bg-warning">
         </div>
-        <div className="text-center ">
+        <div className="text-center order-1 text-white ">
           <h1 className="display-1 pt-5">Welcome to my Resume</h1>
           <h2 className="pb-5">By Joshua Owens</h2>
         </div>
         </div>
         <About/>
-       
+        <Skills/>
         <Experience />
-        <Experience />
-      
       </header>
+      <Foot/>
       </div></div>
     );
   }
