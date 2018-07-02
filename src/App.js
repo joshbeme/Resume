@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="">
       {/* <Heading/> */}<div className="d-flex flex-row w-100 h-100 ">
-      <img className="w-100"  src={heading} />
+      <img className="w-100" alt="" src={heading} />
       </div>
       <Navi />
 
@@ -37,6 +37,7 @@ class App extends Component {
       
       </div>
       <Foot/>
+      
       </div>
     );
   }

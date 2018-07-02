@@ -8,7 +8,7 @@ const Foot = () =>{
     <div className="row  pt-5 text-left">
     <hr/>
     <div className="col">
-    <a type="button" className="btn btn-link" href="https://test-game-demo.herokuapp.com/" >Check out the progress I've made on my game!</a>
+    <blockquote className="embedly-card"><h4><a href="https://test-game-demo.herokuapp.com/">Demo Game</a></h4><p></p></blockquote>
     </div>
     </div>
 </div>    
