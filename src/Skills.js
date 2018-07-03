@@ -1,25 +1,47 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Code from './assets/Code.png';
-import Treehouse from './assets/Treehouse.png'
+import Treehouse from './assets/Treehouse.png';
+import cerritos from './assets/Cerritos.jpg'
 
 
 
-const Skills = () =>{
+class Skills extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      carouselVisible: 'cerritos',
+      code: this.activeCarousel,
+      tree: this.disableCarousel,
+      cerritos: this.disableCarousel,
+  }
+  }
+  activeCarousel = "carousel-item active"
+  disableCarousel = "carousel-item"
+  
+  HandleCarousel(){
+    if(this.state.cerritos === this.disableCarousel){
+      this.setState({
+        code: this.activeCarousel,
+        tree: this.disableCarousel,
+        cerritos: this.disableCarousel,
+      })
+    }
+  }
+
+  render(){
     return(
-<div id="carouselExampleFade" className="carousel slide carousel-fade h-75 mx-5 text-white" data-ride="carousel">
-<div  >
-    <h1 id="Skills" className="display-3 text-center pt-5">Skills</h1>
-    </div>
+<div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+
   <div className="carousel-inner">
-    <div className="carousel-item ">
+    <div className="carousel-item active">
       <img className="d-block w-75 mx-auto" src={Code} alt="First slide"/>
     </div>
-    <div className="carousel-item ">
-      <img className="d-block w-75 mx-auto" src={Treehouse} alt="Second slide"/>
+    <div className="carousel-item">
+      <img className="d-block w-75 mx-auto " src={Treehouse} alt="Second slide"/>
     </div>
-    <div className="carousel-item ">
-      <img className="d-block w-100" src="" alt="Third slide"/>
+    <div className="carousel-item">
+      <img className="d-block w-100" src={cerritos} alt="Third slide"/>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -31,7 +53,7 @@ const Skills = () =>{
     <span className="sr-only">Next</span>
   </a>
 </div>
-    );
+    );}
     
 };
 
