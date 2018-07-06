@@ -3,6 +3,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Code from './assets/Code.png';
 import Treehouse from './assets/Treehouse.png';
 import cerritos from './assets/Cerritos.jpg'
+import './index.css';
 
 
 
@@ -31,14 +32,14 @@ class Skills extends Component {
 
   render(){
     return(
-<div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
-
+<div id="carouselExampleFade" className="row mx-0 carousel slide carousel-fade" data-ride="carousel">
+<div className="col-xl">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img className="d-block w-75 mx-auto" src={Code} alt="First slide"/>
+      <img className="d-block w-100 " src={Code} alt="First slide"/>
     </div>
     <div className="carousel-item">
-      <img className="d-block w-75 mx-auto " src={Treehouse} alt="Second slide"/>
+      <img className="d-block w-100" src={Treehouse} alt="Second slide"/>
     </div>
     <div className="carousel-item">
       <img className="d-block w-100" src={cerritos} alt="Third slide"/>
@@ -52,6 +53,7 @@ class Skills extends Component {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="sr-only">Next</span>
   </a>
+  </div>
 </div>
     );}
     

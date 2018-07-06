@@ -7,34 +7,34 @@ import heading from './assets/Head.jpg';
 import About from './About.js';
 import Skills from './Skills.js';
 import Foot from './Footer.js';
+import './index.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="">
-      {/* <Heading/> */}<div className="d-flex flex-row w-100 h-100 ">
-      <img className="w-100" alt="" src={heading} />
+      <div className="container-fluid" >
+      {/* <Heading/> */}
+      <div id="img"  className="row-md mx-0" >
+        <img id="img" className="img-fluid w-100" alt="" src={heading} />
+      </div>  
+        <Navi />
+      <div id="Home" className="row text-white text-center mx-0">
+        <h2 className="col display-3 pt-5 ">Welcome to my Resume</h2>
       </div>
-      <Navi />
+      <div className="row text-white text-center mx-0" >
+        <h2 className="col pb-5">By Joshua Owens</h2>
+      </div>
+      {/* </heading */}
 
-      <div className="container-fluid">
-      
-      
-      
-
-      <div  >
-        
-        <div className="text-center order-1 text-white ">
-          <h1 className="display-1 pt-5">Welcome to my Resume</h1>
-          <h2 className="pb-5">By Joshua Owens</h2>
-        </div>
-        </div>
         <About/>
+        <div id="Skills" className="row-md mx-0 text-white text-center">
+          <h1 className="col display-3" >Skills</h1>
+        </div>
         <Skills/>
         <Experience />
         <Foot/>
       
-      </div>
+    
       
       </div>
     );
