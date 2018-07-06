@@ -36,13 +36,13 @@ class Skills extends Component {
 <div className="col-xl">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img className="d-block w-100 " src={Code} alt="First slide"/>
+      <img className="d-block w-75 mx-auto " src={Code} alt="First slide"/>
     </div>
     <div className="carousel-item">
-      <img className="d-block w-100" src={Treehouse} alt="Second slide"/>
+      <img className="d-block w-75" src={Treehouse} alt="Second slide"/>
     </div>
     <div className="carousel-item">
-      <img className="d-block w-100" src={cerritos} alt="Third slide"/>
+      <img className="d-block w-75" src={cerritos} alt="Third slide"/>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">

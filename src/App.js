@@ -25,7 +25,6 @@ class App extends Component {
         <h2 className="col pb-5">By Joshua Owens</h2>
       </div>
       {/* </heading */}
-
         <About/>
         <div id="Skills" className="row-md mx-0 text-white text-center">
           <h1 className="col display-3" >Skills</h1>
