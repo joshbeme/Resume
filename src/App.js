@@ -17,7 +17,7 @@ class App extends Component {
       <div id="img"  className="row-md mx-0" >
         <img id="img" className="img-fluid w-100" alt="" src={heading} />
       </div>  
-        <Navi />
+        
       <div id="Home" className="row text-white text-center mx-0">
         <h2 className="col display-3 pt-5 ">Welcome to my Resume</h2>
       </div>
@@ -25,10 +25,12 @@ class App extends Component {
         <h2 className="col pb-5">By Joshua Owens</h2>
       </div>
       {/* </heading */}
+      <Navi />
         <About/>
-        <div id="Skills" className="row-md mx-0 text-white text-center">
+        
+        {/* <div id="Skills" className="row-md mx-0 text-white text-center">
           <h1 className="col display-3" >Skills</h1>
-        </div>
+        </div> */}
         <Skills/>
         <Experience />
         <Foot/>

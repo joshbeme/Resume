@@ -4,7 +4,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const navi = () =>{
     return(
-<nav id="img" className="row navbar navbar-expand-md navbar-light  sticky-top" style={{backgroundColor:"#4b5259", opacity:0.75}} >
+     
+<nav  className=" navbar navbar-expand-md navbar-light  sticky-top" style={{backgroundColor:"#4b5259", opacity:0.75}} >
   <a className="navbar-brand order-1" href="">Joshua O</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
