@@ -7,3 +7,22 @@ div{
   padding: 0 !important;
   width: 100%;
 }
+#skills, #skills1, #skills3{
+  width: 320x;
+  height: 320px;
+
+  object-fit:scale-down;
+}
+#text{
+  font-family: Georgia, serif;
+}
+#foot{
+  background-image: url("./assets/footer.jpg")
+}
+hr{
+  color:"#FFFFFF";
+  border-color: "#FFFFFF"
+}
+#Experience{
+  background-image: url("./assets/footer.jpg")
+}

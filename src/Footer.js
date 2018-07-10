@@ -5,13 +5,14 @@ import git from './assets/github.png';
 
 const Foot = () =>{
     return(
-<div className="row mx-0 bg-dark border border-dark pt-4 rounded">
-    <div className="d-flex align-items-end text-white col pt-4 text-left">
-    <blockquote className="embedly-card float-bottom mr-auto"><h4><a className="text-white" href="https://test-game-demo.herokuapp.com/">Demo Game</a></h4><p></p></blockquote>
+<div id="foot" className="row mx-0  rounded text-white">
+    <p className="mt-0 " >v0.11</p>
+    <div className="d-flex flex-row-reverse align-items-end text-white col pt-4 float-right">
+   <a className="text-white " href="https://test-game-demo.herokuapp.com/">Game Demo</a>
    
-    <img src={git} id="git" className="float-right mh-50"/>
+    <a  href="https://github.com/joshbeme"><img src={git}  id="git" className=""/></a>
     </div>
-    <div className="row" ></div>
+   
 </div>    
     );
     
