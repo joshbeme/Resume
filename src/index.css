@@ -8,8 +8,8 @@ div{
   width: 100%;
 }
 #skills, #skills1, #skills3{
-  width: 320x;
-  height: 320px;
+  width: 400x;
+  height: 400px;
 
   object-fit:scale-down;
 }
@@ -23,6 +23,15 @@ hr{
   color:"#FFFFFF";
   border-color: "#FFFFFF"
 }
-#Experience{
+/* #Experience{
   background-image: url("./assets/footer.jpg")
+} */
+#img{
+  height: 100%
+}
+#img1{
+  height: 100%
+}
+.border-left{
+  width: 50px;
 }
