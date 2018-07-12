@@ -83,7 +83,7 @@ this.setState({
   }
 
   componentDidMount() {
-    console.log()
+  
   }
 
   render() {
@@ -103,6 +103,7 @@ this.setState({
               }}
             />
             <a
+            onScroll={this.home}
             onClick={this.home}
               id="buttonHome"
               role="button"
@@ -115,7 +116,7 @@ this.setState({
 
           <div className="row  mx-0">
             <div
-              className="col-1 rounded "
+              className="col-1 shadow rounded "
               style={{
                 backgroundColor: "#ffffff",
                 display: `${this.state.nav.about}`
@@ -125,15 +126,14 @@ this.setState({
             onClick={this.about}
               role="button"
               href="#About"
-              className="btn  col btn-dark bg-transparent border-0 text-left scroll-down"
-            >
+              className="btn  col btn-dark bg-transparent border-0 text-left scroll-down" >
               About
             </a>
           </div>
 
           <div className="row mx-0">
             <div
-              className="col-1 rounded "
+              className="col-1 shadow rounded "
               style={{
                 backgroundColor: "#ffffff",
                 display: `${this.state.nav.skills}`
@@ -151,7 +151,7 @@ this.setState({
 
           <div className="row mx-0">
             <div
-              className="col-1 rounded"
+              className="col-1 shadow rounded"
               style={{
                 backgroundColor: "#ffffff",
                 display: `${this.state.nav.experience}`

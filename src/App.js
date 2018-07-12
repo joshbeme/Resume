@@ -43,7 +43,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="container-fluid">
+      <div id="main" className="container-fluid">
         {/* <Heading/> */}
         <Collapse isOpened={this.state.collapse}>
           <div id="Home" className="row text-white text-center mx-0">
@@ -59,12 +59,13 @@ class App extends Component {
           <img id="img1" className="img-fluid w-100" alt="" src={heading} />
         </div>
         {/* </heading */}
-        <div className="container">
+        
           <Navi />
           <About />
           {/* <div id="Skills" className="row-md mx-0 text-white text-center">
           <h1 className="col display-3" >Skills</h1>
         </div> */}
+        
           <div
             className="row mx-0 text-white text-center "
             style={{ backgroundColor: "" }}
@@ -74,6 +75,7 @@ class App extends Component {
             </h1>
           </div>
           <Skills />
+          <div className="container">
           <Experience />
         </div>
         <Foot />
