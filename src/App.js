@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navi from "./NavBar.js";
 import Experience from "./Experience.js";
 // import Heading from './Head.js'
-import heading from "./assets/Head.jpg";
+import Heading from "./Head.js";
 import About from "./About.js";
 import Skills from "./Skills.js";
 import Foot from "./Footer.js";
@@ -42,25 +42,8 @@ class App extends Component {
   render() {
     return (
       <div id="main" className="container-fluid">
-        {/* <Heading/> */}
-{" "}
-
-        {/* </heading */}
-        <div className='row mx-0 w-100 text-white align-self-center' id='headHead' >
-           <div className='row mx-0 ' id='img1' >
-
-           <Collapse isOpened={this.state.collapse} >
-          <div id="Home" className="row text-white text-center mx-0 pt-4">
-            <h2 className="col display-3  ">Welcome to my Resume</h2>
-          </div>
-        </Collapse>
-        <Collapse isOpened={this.state.collapseAll}>
-          <div className="row text-white text-center mx-0">
-            <h2 className="col">By Joshua Owens</h2>
-          </div>
-        </Collapse>
-        </div>
-        </div>
+        
+        <Heading />
         
           <Navi />
           <About />
