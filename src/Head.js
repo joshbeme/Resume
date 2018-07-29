@@ -5,15 +5,19 @@ import heading from "./assets/Head.jpg";
 const Heading = () => {
   return (
     <div class="jumbotron jumbotron-fluid bg-transparent pt-0 px-0 mx-0">
-      <img className="img-responsive" src={heading} />
-      <div class="container-fluid bg-transparent px-0 mx-0 d-flex">
-        {/* <img className="img-responsive" src={heading} /> */}
-        <h1 class="d-block display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
-      </div>
+        <Collapse isOpened={this.state.collapse}>
+          <div id="Home" className="row text-white text-center mx-0">
+            <h2 className="col display-3 pt-5 ">Welcome to my Resume</h2>
+          </div>
+        </Collapse>{" "}
+        <Collapse isOpened={this.state.collapseAll}>
+          <div className="row text-white text-center mx-0">
+            <h2 className="col">By Joshua Owens</h2>
+          </div>
+        </Collapse>
+        <div id="headImg" className=" mx-0">
+          <img id="img1" className="img-fluid w-100" alt="" src={heading} />
+        </div>
     </div>
   );
 };

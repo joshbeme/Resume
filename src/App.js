@@ -14,27 +14,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapse: true,
+      collapse: false,
       dis: "none",
-      collapseAll: true
+      collapseAll: false
     };
     (this.h1Move = this.h1Move.bind(this)),
       (this.hAllMove = this.hAllMove.bind(this));
   }
   h1Move() {
     this.setState({
-      collapse: false,
+      collapse: !this.state.collapse,
       dis: "default"
     });
   }
   hAllMove() {
     this.setState({
-      collapseAll: false
+      collapseAll: !this.state.collapseAll
     });
   }
-  componentWillMount() {
-    setTimeout(2000);
-  }
+  
   componentDidMount() {
     setTimeout(this.h1Move, 1000);
     setTimeout(this.hAllMove, 1600);
@@ -45,20 +43,24 @@ class App extends Component {
     return (
       <div id="main" className="container-fluid">
         {/* <Heading/> */}
-        <Collapse isOpened={this.state.collapse}>
-          <div id="Home" className="row text-white text-center mx-0">
-            <h2 className="col display-3 pt-5 ">Welcome to my Resume</h2>
+{" "}
+
+        {/* </heading */}
+        <div className='row mx-0 w-100 text-white align-self-center' id='headHead' >
+           <div className='row mx-0 ' id='img1' >
+
+           <Collapse isOpened={this.state.collapse} >
+          <div id="Home" className="row text-white text-center mx-0 pt-4">
+            <h2 className="col display-3  ">Welcome to my Resume</h2>
           </div>
-        </Collapse>{" "}
+        </Collapse>
         <Collapse isOpened={this.state.collapseAll}>
           <div className="row text-white text-center mx-0">
             <h2 className="col">By Joshua Owens</h2>
           </div>
         </Collapse>
-        <div id="" className=" mx-0">
-          <img id="img1" className="img-fluid w-100" alt="" src={heading} />
         </div>
-        {/* </heading */}
+        </div>
         
           <Navi />
           <About />

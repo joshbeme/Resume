@@ -108,7 +108,7 @@ this.setState({
               id="buttonHome"
               role="button"
               href="#Home"
-              className="btn col bg-transparent text-white text-left"
+              className="btn col bg-transparent text-info text-left"
             >
               Home
             </a>
@@ -126,7 +126,7 @@ this.setState({
             onClick={this.about}
               role="button"
               href="#About"
-              className="btn  col btn-dark bg-transparent border-0 text-left scroll-down" >
+              className="btn text-primary col btn-dark bg-transparent border-0 text-left scroll-down" >
               About
             </a>
           </div>
@@ -143,7 +143,7 @@ this.setState({
             onClick={this.skills}
               role="button"
               href="#Skills"
-              className="btn  col btn-dark bg-transparent border-0 text-left"
+              className="btn text-info col btn-dark bg-transparent border-0 text-left"
             >
               Skills
             </a>
@@ -161,7 +161,7 @@ this.setState({
             onClick={this.experience}
               role="button"
               href="#Experience"
-              className="btn col btn-dark bg-transparent border-0 text-left"
+              className="btn col text-primary btn-dark bg-transparent border-0 text-left"
             >
               Experience
             </a>
