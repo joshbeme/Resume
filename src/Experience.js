@@ -7,7 +7,7 @@ import "./index.css";
 
 const Experience = () => {
   return (
-    <div className="row-md py-4 my-0 " id="Experience">
+    <div className="container row-md py-4 my-0 " id="Experience">
       <div className="row mx-0">
         <h1 className="col-md display-3 d-auto text-center text-white">
           Experience

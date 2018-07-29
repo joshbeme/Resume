@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import HeadingInfo from './HeadInfo.js'
+import React, { Component } from "react";
+import HeadingInfo from "./HeadInfo.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class Heading extends Component {
@@ -24,7 +24,7 @@ class Heading extends Component {
       collapseAll: !this.state.collapseAll
     });
   }
-  
+
   componentDidMount() {
     setTimeout(this.h1Move, 1000);
     setTimeout(this.hAllMove, 1600);
@@ -32,11 +32,15 @@ class Heading extends Component {
     console.log(this.state.collapse);
   }
   render() {
-  return (
-    <div class="jumbotron jumbotron-fluid bg-transparent pt-0 px-0 mx-0">
-<HeadingInfo collOne={this.state.collapse} collTwo={this.state.collapseAll} />
-    </div>
-  );}
-};
+    return (
+      <div class="jumbotron jumbotron-fluid bg-transparent pt-0 px-0 mx-0">
+        <HeadingInfo
+          collOne={this.state.collapse}
+          collTwo={this.state.collapseAll}
+        />
+      </div>
+    );
+  }
+}
 
 export default Heading;
