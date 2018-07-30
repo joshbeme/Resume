@@ -6,6 +6,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Motion, spring } from 'react-motion';
 import { UnmountClosed } from 'react-collapse';
 import OnVisible from 'react-on-visible';
+import SkillsCode from './SkillsCode';
 
 
 
@@ -44,6 +45,9 @@ class Skills extends Component {
       this.handleMouseDown()
     }
   }
+  handleMotion(){
+    codeAca();
+  }
 
 
   componentDidMount() { 
@@ -52,8 +56,8 @@ class Skills extends Component {
   }
   render() {
     let codeAca = () =>
-      document.getElementById('Skills').clientWidth -
-      document.getElementById('skills1').clientWidth;
+      document.querySelector('#Skills').clientWidth -
+      document.querySelector('#skills1').clientWidth;
 ;
     return (
       <div  className='row-md my-0 mx-0 '>
@@ -66,7 +70,7 @@ class Skills extends Component {
           button
         </button>
 
-        <div  className='row mx-0' >
+        {/* <div  className='row mx-0' >
           <UnmountClosed
           
             className='col-5 mx-0 border-0'
@@ -109,7 +113,9 @@ class Skills extends Component {
         <OnVisible onChange={this.handleTouchStart}/> 
           </div>
          
-        </div>
+        </div> */}
+<SkillsCode collOpen={this.state.colla} motionToggle={this.state.open} motionX={codeAca()} />
+
         <div
           className='row  d-flex justify-content-end mx-0'
           style={{ backgroundColor: '	#63D081' }}

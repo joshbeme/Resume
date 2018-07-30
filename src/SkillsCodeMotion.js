@@ -12,7 +12,7 @@ let SkillsCodeMotion = props => {
     <Motion
       id="skillsCodeImg"
       className="col-xl border-0 "
-      style={{ x: spring(props.motionToggle ? props.xPos : 0) }}
+      style={{ x: spring(props.toggle ? props.xPos : 0) }}
     >
       {({ x }) => (
         <img

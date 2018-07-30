@@ -1,6 +1,7 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SkillsCodeColl from "./SkillsCodeColl";
+import SkillsCodeMotion from "./SkillsCodeMotion";
 
 let SkillsCode = props => {
   return (
@@ -17,9 +18,9 @@ let SkillsCode = props => {
         </div>
       </UnmountClosed> */}
 
-      <SkillsCodeColl isOpened={prop.collOpen} />
+      <SkillsCodeColl isOpened={props.collOpen} />
 
-      <div
+      {/* <div
         className="col mx-0 "
         style={{ backgroundColor: "#ffffff", display: "" }}
       >
@@ -46,7 +47,10 @@ let SkillsCode = props => {
           )}
         </Motion>
         
-      </div>
+      </div> */}
+<SkillsCodeMotion toggle={props.motionToggle} xPos={props.motionX} />
+
+
     </div>
   );
 };
