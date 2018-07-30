@@ -1,20 +1,10 @@
 import React, { Component } from "react";
+import NavHome from './NavHome.js';
+import NavAbout from './NavAbout.js';
+import NavSkills from './NavSkills.js'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import NavExperience from "./NavExperience.js";
 
-// let isAnyPartOfElementInViewport = (Element) => {
-
-//   const rect = Element.getBoundingClientRect();
-//   // DOMRect { x: 8, y: 8, width: 100, height: 100, top: 8, right: 108, bottom: 108, left: 8 }
-//   const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-//   const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-
-//   // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
-//   const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-//   const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-
-//   return(vertInView && horInView );}
-
-  
 
 class Navi extends Component {
   constructor(props) {
@@ -94,78 +84,12 @@ this.setState({
     return (
       <div className="row bg-transparent fixed-top mx-0 pl-4  ">
         <div className="col-2  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm ">
-          <div className="row mx-0">
-            <div
-              className="col-1 rounded shadow "
-              style={{
-                backgroundColor: "#ffffff",
-                display: `${this.state.nav.home}`
-              }}
-            />
-            <a
-            onScroll={this.home}
-            onClick={this.home}
-              id="buttonHome"
-              role="button"
-              href="#Home"
-              className="btn col bg-transparent text-info text-left"
-            >
-              Home
-            </a>
-          </div>
 
-          <div className="row  mx-0">
-            <div
-              className="col-1 shadow rounded "
-              style={{
-                backgroundColor: "#ffffff",
-                display: `${this.state.nav.about}`
-              }}
-            />
-            <a
-            onClick={this.about}
-              role="button"
-              href="#About"
-              className="btn text-primary col btn-dark bg-transparent border-0 text-left scroll-down" >
-              About
-            </a>
-          </div>
-
-          <div className="row mx-0">
-            <div
-              className="col-1 shadow rounded "
-              style={{
-                backgroundColor: "#ffffff",
-                display: `${this.state.nav.skills}`
-              }}
-            />
-            <a
-            onClick={this.skills}
-              role="button"
-              href="#Skills"
-              className="btn text-info col btn-dark bg-transparent border-0 text-left"
-            >
-              Skills
-            </a>
-          </div>
-
-          <div className="row mx-0">
-            <div
-              className="col-1 shadow rounded"
-              style={{
-                backgroundColor: "#ffffff",
-                display: `${this.state.nav.experience}`
-              }}
-            />
-            <a
-            onClick={this.experience}
-              role="button"
-              href="#Experience"
-              className="btn col text-primary btn-dark bg-transparent border-0 text-left"
-            >
-              Experience
-            </a>
-          </div>
+          <NavHome display={this.state.nav.home} onScroll={this.home} onClick={this.home} />
+          <NavAbout display={this.state.nav.about} onClick={this.about} />
+          <NavSkills display={this.state.nav.skills} onClick={this.skills} />
+          <NavExperience display={this.state.nav.experience} onClick={this.experience} />
+          
         </div>
       </div>
     );
