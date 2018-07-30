@@ -1,10 +1,11 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import SkillsCodeColl from "./SkillsCodeColl";
 
 let SkillsCode = props => {
   return (
     <div className="row mx-0">
-      <UnmountClosed
+      {/* <UnmountClosed
         className="col-5 mx-0 border-0"
         isOpened={this.state.colla}
         style={{ backgroundColor: "#ffffff", display: "" }}
@@ -14,7 +15,9 @@ let SkillsCode = props => {
           Random content gfdgdfgfdgfdgfg gfdgfdgggggggggggggggggggggg
           gggggggggggbfdgfdgdfgdfgfd
         </div>
-      </UnmountClosed>
+      </UnmountClosed> */}
+
+      <SkillsCodeColl isOpened={prop.collOpen} />
 
       <div
         className="col mx-0 "

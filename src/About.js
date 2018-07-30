@@ -8,7 +8,7 @@ const About = () => {
     <div
       id="About"
       style={{ backgroundColor: "#4b494c" }}
-      className="row justify-content-center mx-0 text-white py-4 align-bottom"
+      className="row-md justify-content-center mx-0 text-white py-4 align-bottom"
     >
       <div className="container row justify-content-between mx-0">
         <div className="col-md-5 pr-4 ">
@@ -23,8 +23,8 @@ const About = () => {
             
           </span>
         </div>
-        <div className="col-md-6  justify-content-between">
-          <img className="col-md img-fluid " src={cerritos} />
+        <div className="col-md-6 justify-content-between rounded">
+          <img className="img-fluid " src={cerritos} />
         </div>
       </div>
     </div>

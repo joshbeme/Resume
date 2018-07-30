@@ -57,14 +57,7 @@ class Skills extends Component {
 ;
     return (
       <div  className='row-md my-0 mx-0 '>
-        {/* <div
-          className='row d-flex justify-content-center my-0 mx-0'
-          style={{ backgroundColor: '' }}
-        >
 
-          {' '}
-          <img id='skills' className='img-fluid ' src={cerritos} />{' '}
-        </div> */}
         <button
           className='btn'
           onMouseDown={this.handleMouseDown}
@@ -118,7 +111,7 @@ class Skills extends Component {
          
         </div>
         <div
-          className='row d-flex justify-content-end mx-0'
+          className='row  d-flex justify-content-end mx-0'
           style={{ backgroundColor: '	#63D081' }}
         >
           {' '}
