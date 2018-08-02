@@ -2,10 +2,12 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SkillsCodeColl from "./SkillsCodeColl";
 import SkillsCodeMotion from "./SkillsCodeMotion";
+import {Motion, spring } from 'react-motion';
+import {Code} from './assets/Code.png'
 
 let SkillsCode = props => {
   return (
-    <div className="row mx-0">
+    <div className="row-md mx-0">
       {/* <UnmountClosed
         className="col-5 mx-0 border-0"
         isOpened={this.state.colla}
@@ -19,6 +21,8 @@ let SkillsCode = props => {
       </UnmountClosed> */}
 
       <SkillsCodeColl isOpened={props.collOpen} />
+
+ <SkillsCodeMotion toggle={props.motionToggle} xPos={props.motionX} /> 
 
       {/* <div
         className="col mx-0 "
@@ -48,7 +52,6 @@ let SkillsCode = props => {
         </Motion>
         
       </div> */}
-<SkillsCodeMotion toggle={props.motionToggle} xPos={props.motionX} />
 
 
     </div>

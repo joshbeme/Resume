@@ -7,17 +7,18 @@ div{
   padding: 0 !important;
   width: 100%;
 }
-#skills, #skills1, #skills3{
-  width: 400x;
-  height: 400px;
+  #skills1, #skills2{
+  width: 500x;
+  height: 500px;
 
   object-fit:scale-down;
-}
+} 
 #text{
   font-family: Georgia, serif;
 }
 #foot{
-  background-image: url("./assets/footer.jpg")
+  background-image: url("./assets/footer.jpg");
+  height:50vh;
 }
 hr{
   color:"#FFFFFF";
@@ -37,17 +38,25 @@ hr{
 .border-left{
   width: 50px;
 }
+
 #skillsCode{
   position: absolute;
-  z-index: 30
+  z-index: 50;
+}
+#skillsCode1{
+  
+  z-index: 75;
 }
 #skillsCodeImg{
-  position: absolute;
-  z-index: 20;
+  z-index: 50;
   background-color: #ffffff
 }
 #skills1{
+ position: relative;
   z-index: 50;
+}
+#skills2{
+  position: relative;
 }
 html{
   z-index: 15;
@@ -69,10 +78,17 @@ headImg{
   background-attachment: fixed;
 }
 
-#About{
-  height: 50vh;
+/* #About{
+  height: 120vh;
+  vertical-align: top;
   
+} */
+#Experience{
+  height: 120vh;
 }
-#foot{
-  height:50vh;
-}
+hr {
+  height: 1px;
+  color: #ffffff;
+  background-color: #ffffff;
+  border: none;
+  }

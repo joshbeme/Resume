@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import Code from './assets/Code.png';
 import Treehouse from './assets/Treehouse.png';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Motion, spring } from 'react-motion';
-import { UnmountClosed } from 'react-collapse';
-import OnVisible from 'react-on-visible';
 import SkillsCode from './SkillsCode';
+import OnVisible from 'react-on-visible';
+import Code from './assets/Code.png'
 
 
 
@@ -19,6 +17,7 @@ class Skills extends Component {
       colla: false,
     };
     this.collCol = this.collCol.bind(this);
+    this.handleMouseDown = this.handleMouseDown.bind(this);
   }
 
   collCol() {
@@ -27,14 +26,15 @@ class Skills extends Component {
     });
   }
 
-  handleMouseDown = (isVisible) =>{if (isVisible) {
-    this.setState({ open: !this.state.open });
-    this.collCol();}
+  handleMouseDown (e){
+    e ? this.setState({ open: !this.state.open }) : this.setState({ open: !this.state.open })
+    
+
   };
 
-  handleTouchStart = (e) => {
+  handleTouchStart = () => {
     return
-    e.preventDefault();
+    
     this.handleMouseDown();
   };
   handleScroll(){
@@ -45,9 +45,7 @@ class Skills extends Component {
       this.handleMouseDown()
     }
   }
-  handleMotion(){
-    codeAca();
-  }
+
 
 
   componentDidMount() { 
@@ -55,20 +53,18 @@ class Skills extends Component {
 
   }
   render() {
-    let codeAca = () =>
-      document.querySelector('#Skills').clientWidth -
-      document.querySelector('#skills1').clientWidth;
+
 ;
     return (
       <div  className='row-md my-0 mx-0 '>
 
-        <button
+          {/* <button
           className='btn'
           onMouseDown={this.handleMouseDown}
           onTouchStart={this.handleTouchStart}
         >
           button
-        </button>
+        </button>   */}
 
         {/* <div  className='row mx-0' >
           <UnmountClosed
@@ -114,14 +110,18 @@ class Skills extends Component {
           </div>
          
         </div> */}
-<SkillsCode collOpen={this.state.colla} motionToggle={this.state.open} motionX={codeAca()} />
 
+<SkillsCode collOpen={this.state.open} motionToggle={this.state.open} motionX={this.handleMotion} />
+
+        <OnVisible onChange={(cool)=>this.handleMouseDown(cool)} > 
+            
+        </OnVisible>
         <div
           className='row  d-flex justify-content-end mx-0'
           style={{ backgroundColor: '	#63D081' }}
         >
           {' '}
-          <img id='skills2' className='img-fluid ' src={Treehouse} />{' '}
+          <img alt='' id='skills2' className='img-fluid ' src={Treehouse} />{' '}
         </div>
       </div>
     );

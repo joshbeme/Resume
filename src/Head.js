@@ -10,8 +10,8 @@ class Heading extends Component {
       dis: "none",
       collapseAll: false
     };
-    (this.h1Move = this.h1Move.bind(this)),
-      (this.hAllMove = this.hAllMove.bind(this));
+    this.h1Move = this.h1Move.bind(this);
+    this.hAllMove = this.hAllMove.bind(this);
   }
   h1Move() {
     this.setState({
@@ -33,7 +33,7 @@ class Heading extends Component {
   }
   render() {
     return (
-      <div class="jumbotron jumbotron-fluid bg-transparent pt-0 px-0 mx-0">
+      <div class="bg-transparent pt-0 px-0 mx-0">
         <HeadingInfo
           collOne={this.state.collapse}
           collTwo={this.state.collapseAll}

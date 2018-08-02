@@ -15,7 +15,7 @@ let NavExperience = props => {
         onClick={props.onClick}
         role="button"
         href="#Experience"
-        className="btn col text-primary btn-dark bg-transparent border-0 text-left"
+        className="btn col text-info btn-dark bg-transparent border-0 text-left"
       >
         Experience
       </a>

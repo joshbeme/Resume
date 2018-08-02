@@ -14,9 +14,8 @@ class App extends Component {
   render() {
     return (
       <div id="main" className="container-fluid">
-        <Heading />
-
         <Navi />
+        <Heading />
 
         <About />
 

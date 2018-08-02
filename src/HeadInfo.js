@@ -1,5 +1,4 @@
-import React, { component } from "react";
-import heading from "./assets/Head.jpg";
+import React from "react";
 import { Collapse } from "react-collapse";
 
 let HeadingInfo = props => {

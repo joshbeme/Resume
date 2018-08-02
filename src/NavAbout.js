@@ -15,7 +15,7 @@ let NavAbout = props => {
         onClick={props.onClick}
         role="button"
         href="#About"
-        className="btn text-primary col btn-dark bg-transparent border-0 text-left scroll-down"
+        className="btn text-info col btn-dark bg-transparent border-0 text-left scroll-down"
       >
         About
       </a>
