@@ -34,12 +34,12 @@ class About extends Component {
         className="row mx-0 justify-content-center text-white"
       >
         <div
-          className="container justify-content-between row mx-0 shadow  pt-5"
+          className="container justify-content-between row mx-0 shadow pb-5 pt-5"
           style={{ backgroundColor: "#627b90" }}
         >
           <div className="col-md-3 ">
             <h1 className="display-4 text-center ">About me</h1>
-            <div className="row d-flex h-100 justify content center mx-0 ">
+            <div className="row d-flex h-100  mx-0 ">
               <div className="col mx-0 pt-2">
                 <img
                   onMouseEnter={this.handleHover}

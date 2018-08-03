@@ -7,12 +7,18 @@ import "./index.css";
 
 const Experience = () => {
   return (
-    <div className="container row-md py-4 my-0 " id="Experience">
-      <div className="row-md mx-0">
+    <div
+      className="row-md  justify-content-center d-flex align-items-stretch"
+      id="Experience"
+    >
+      <div className="container  px-4 shadow" style={{ backgroundColor: "#627b90" }}>
+        {/* <div className="row-md mx-0">
         <h1 className="col-md display-3 d-auto text-center text-white">
           Experience
         </h1>
-      </div>
+      </div> */}
+
+        {/*
       <div className="card-deck col mx-0 ">
         <div className="card  ">
           <img className="card-img-top h-50" src={encore} alt="" />
@@ -46,7 +52,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="card" style={{ backgroundColor: "#EA0B8C" }}>
-          <img className="card-img-top h-50" src={lyft} alt="" />
+          <img className="img-fluid" src={lyft} alt="" />
           <div className="card-body">
             <h5 id="text" className="card-title">
               Lyft
@@ -58,6 +64,72 @@ const Experience = () => {
             <p id="text" className="card-text align-bottom">
               <small className="text-muted">1/10/2018 - Now</small>
             </p>
+          </div>
+        </div> */}
+          <div className="row justify-content-center mx-0" ><h1 className="text-center" >Experience</h1></div>
+
+
+        <div className="row py-5 mx-0">
+          <div class="col">
+            <h5 class="mt-0">Encore</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <p id="text" className="">
+              <small className="text-white">8/25/2015 – 9/4/2016</small>
+            </p>
+          </div>
+          
+          <div class="col-2">
+            <img
+              id="expImg"
+              class="pr-2 img-fluid "
+              src={encore}
+              alt="Generic placeholder image"
+            />
+          </div>
+        </div>
+
+        <div className="row py-5 mx-0">
+          <div class="col">
+            <h5 class="mt-0">Target</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <p id="text" className="">
+              <small className="text-white">8/25/2015 – 9/4/2016</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              id="expImg"
+              class="pr-2 img-fluid "
+              src={target}
+              alt="Generic placeholder image"
+            />
+          </div>
+        </div>
+        <div className="row py-5 mx-0">
+          <div class="col">
+            <h5 class="mt-0">Lyft</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            
+            <p id="text" className="">
+              <small className="text-white">1/10/2018 - Now</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              id="expImg"
+              class="pr-2 img-fluid "
+              src={lyft}
+              alt="Generic placeholder image"
+            />
           </div>
         </div>
       </div>

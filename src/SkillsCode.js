@@ -2,58 +2,18 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SkillsCodeColl from "./SkillsCodeColl";
 import SkillsCodeMotion from "./SkillsCodeMotion";
-import {Motion, spring } from 'react-motion';
-import {Code} from './assets/Code.png'
+import OnVisible from 'react-on-visible';
 
 let SkillsCode = props => {
   return (
     <div className="row-md mx-0">
-      {/* <UnmountClosed
-        className="col-5 mx-0 border-0"
-        isOpened={this.state.colla}
-        style={{ backgroundColor: "#ffffff", display: "" }}
-        id="skillsCode"
-      >
-        <div className="mx-0">
-          Random content gfdgdfgfdgfdgfg gfdgfdgggggggggggggggggggggg
-          gggggggggggbfdgfdgdfgdfgfd
-        </div>
-      </UnmountClosed> */}
+      <SkillsCodeColl isOpened={props.open} />
 
-      <SkillsCodeColl isOpened={props.collOpen} />
-
- <SkillsCodeMotion toggle={props.motionToggle} xPos={props.motionX} /> 
-
-      {/* <div
-        className="col mx-0 "
-        style={{ backgroundColor: "#ffffff", display: "" }}
-      >
-        <Motion
-          id="skillsCodeImg"
-          className="col-xl border-0 "
-          style={{ x: spring(this.state.open ? props.xPos : 0) }}
-        >
-          {({ x }) => (
-            // children is a callback which should accept the current value of
-            // `style`
-
-            <img
-              id="skills1"
-              className=" img-fluid "
-              style={{
-                WebkitTransform: `translate3d(${x}px, 0, 0)`,
-                transform: `translate3d(${x}px, 0, 0)`,
-                display: ""
-              }}
-              src={Code}
-              href="UniqueElementIdentifier"
-            />
-          )}
-        </Motion>
-        
-      </div> */}
-
-
+      <SkillsCodeMotion toggle={props.open} />
+      <OnVisible onChange={props.visible} > 
+            
+            </OnVisible>
+      
     </div>
   );
 };

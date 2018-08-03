@@ -5,6 +5,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import SkillsCode from './SkillsCode';
 import OnVisible from 'react-on-visible';
 import Code from './assets/Code.png'
+import SkillsTreeMotion from './SkillsTreeMotion';
+import SkillsTreeColl from './SkillsTreeColl';
+import SkillsTree from './SkillsTree';
 
 
 
@@ -14,10 +17,10 @@ class Skills extends Component {
     super(props);
     this.state = {
       open: false,
-      colla: false,
+      open2: false,
     };
-    this.collCol = this.collCol.bind(this);
-    this.handleMouseDown = this.handleMouseDown.bind(this);
+    this.handleTree = this.handleTree.bind(this);
+    this.handleCode = this.handleCode.bind(this);
   }
 
   collCol() {
@@ -26,16 +29,16 @@ class Skills extends Component {
     });
   }
 
-  handleMouseDown (e){
-    e ? this.setState({ open: !this.state.open }) : this.setState({ open: !this.state.open })
+  handleCode (cool){
+    cool ? this.setState({ open: !this.state.open }) : this.setState({ open: !this.state.open })
     
 
   };
 
-  handleTouchStart = () => {
-    return
+  handleTree (cool){
+    cool ? this.setState({ open2: !this.state.open2 }) : this.setState({ open2: !this.state.open2 })
     
-    this.handleMouseDown();
+
   };
   handleScroll(){
     if (!this.state.open){
@@ -111,18 +114,17 @@ class Skills extends Component {
          
         </div> */}
 
-<SkillsCode collOpen={this.state.open} motionToggle={this.state.open} motionX={this.handleMotion} />
+<SkillsCode open={this.state.open} visible={this.handleCode} />
 
-        <OnVisible onChange={(cool)=>this.handleMouseDown(cool)} > 
-            
-        </OnVisible>
-        <div
+
+        {/* <div
           className='row  d-flex justify-content-end mx-0'
           style={{ backgroundColor: '	#63D081' }}
         >
           {' '}
           <img alt='' id='skills2' className='img-fluid ' src={Treehouse} />{' '}
-        </div>
+        </div> */}
+<SkillsTree open={this.state.open2} visible={this.handleTree} />
       </div>
     );
   }

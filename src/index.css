@@ -8,8 +8,8 @@ div{
   width: 100%;
 }
   #skills1, #skills2{
-  width: 500x;
-  height: 500px;
+  width: 400x;
+  height: 400px;
 
   object-fit:scale-down;
 } 
@@ -38,7 +38,10 @@ hr{
 .border-left{
   width: 50px;
 }
-
+#skillsTree{
+  position: absolute;
+  z-index: 50;
+}
 #skillsCode{
   position: absolute;
   z-index: 50;
@@ -48,12 +51,12 @@ hr{
   z-index: 75;
 }
 #skillsCodeImg{
-  z-index: 50;
+ 
   background-color: #ffffff
 }
 #skills1{
  position: relative;
-  z-index: 50;
+
 }
 #skills2{
   position: relative;
@@ -92,3 +95,12 @@ hr {
   background-color: #ffffff;
   border: none;
   }
+#codeText{
+  color: #204056
+}
+/* #expImg{
+  width: 64x;
+  height: 64px;
+
+  object-fit:scale-down;
+} */

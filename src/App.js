@@ -11,9 +11,20 @@ import SkillsHeader from "./SkillsHeader.js";
 import "./index.css";
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+  }
+
+  componentDidMount(){
+    document.getElementById('main').addEventListener('scroll', ()=>{console.log('sup')})
+  }
+  componentWillUnmount(){
+    document.getElementById('main').removeEventListener('scroll');
+  }
   render() {
     return (
-      <div id="main" className="container-fluid">
+      <div id="main" className="container-fluid"  >
         <Navi />
         <Heading />
 
