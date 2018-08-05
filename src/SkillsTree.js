@@ -10,7 +10,7 @@ let SkillsTree = props => {
     <div className="row-md mx-0">
 
 <SkillsTreeColl isOpened={props.open} />
-        <SkillsTreeMotion toggle={props.open}  />
+        <SkillsTreeMotion className="" toggle={props.open}  />
         <OnVisible onChange={props.visible} > 
             </OnVisible>
     </div>

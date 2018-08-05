@@ -12,14 +12,14 @@ let SkillsCodeMotion = props => {
   return (
     <div
       id="skillsCodeImg"
-      className="row mx-0 "
+      className="row  mx-0 d-none d-md-block "
       style={{ backgroundColor: "", display: "" }}
     >
       {" "}
       {console.log("motion")}
       <Motion
         id="skills1"
-        className=""
+        className="col-sm"
         style={{ x: spring(props.toggle ? distance() : 0) }}
       >
         {({ x }) => (

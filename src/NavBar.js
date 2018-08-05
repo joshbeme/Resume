@@ -83,7 +83,7 @@ this.setState({
   
     return (
       <div className="row bg-transparent fixed-top mx-0 pl-4  ">
-        <div className="col-2  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm ">
+        <div className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm ">
 
           <NavHome display={this.state.nav.home} onScroll={this.home} onClick={this.home} />
           <NavAbout display={this.state.nav.about} onClick={this.about} />
