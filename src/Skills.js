@@ -8,6 +8,7 @@ import Code from './assets/Code.png'
 import SkillsTreeMotion from './SkillsTreeMotion';
 import SkillsTreeColl from './SkillsTreeColl';
 import SkillsTree from './SkillsTree';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 
@@ -29,8 +30,11 @@ class Skills extends Component {
     });
   }
 
-  handleCode (cool){
-    cool ? this.setState({ open: !this.state.open }) : this.setState({ open: !this.state.open })
+  handleCode = (v) => {
+    if (v.onScreen){
+      this.setState({ open: !this.state.open })
+    }
+    else {this.setState({ open: !this.state.open })}
     
 
   };
@@ -114,8 +118,9 @@ class Skills extends Component {
          
         </div> */}
 
-<SkillsCode open={this.state.open} visible={this.handleCode} />
-
+<SkillsCode open={this.state.open}  />
+<ScrollAnimation animateIn='flipOutX'
+  afterAnimatedIn={(v)=>this.handleCode(v)} afterAnimatedOut={(v)=>this.handleCode(v)} ></ScrollAnimation>
 
         {/* <div
           className='row  d-flex justify-content-end mx-0'

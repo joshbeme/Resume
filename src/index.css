@@ -8,8 +8,8 @@ div{
   width: 100%;
 }
   #skills1, #skills2{
-  width: 400x;
-  height: 400px;
+  width: 500x;
+  height: 500px;
 
   object-fit:scale-down;
 } 

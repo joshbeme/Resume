@@ -2,7 +2,7 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SkillsTreeColl from "./SkillsTreeColl";
 import SkillsTreeMotion from "./SkillsTreeMotion";
-import OnVisible from 'react-on-visible';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 let SkillsTree = props => {
@@ -11,8 +11,8 @@ let SkillsTree = props => {
 
 <SkillsTreeColl isOpened={props.open} />
         <SkillsTreeMotion toggle={props.open}  />
-        <OnVisible onChange={props.visible} > 
-            </OnVisible>
+
+
     </div>
   );
 };
