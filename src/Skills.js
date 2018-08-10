@@ -114,7 +114,8 @@ class Skills extends Component {
          
         </div> */}
 
-<SkillsCode open={this.state.open} visible={this.handleCode} />
+<SkillsCode className='py-4' open={this.state.open} visible={this.handleCode} />
+
 
 
         {/* <div
@@ -124,7 +125,7 @@ class Skills extends Component {
           {' '}
           <img alt='' id='skills2' className='img-fluid ' src={Treehouse} />{' '}
         </div> */}
-<SkillsTree open={this.state.open2} visible={this.handleTree} />
+<SkillsTree className='py-4' open={this.state.open2} visible={this.handleTree} />
       </div>
     );
   }
