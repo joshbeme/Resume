@@ -7,7 +7,7 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageClass: `img-fluid rounded `,
+      imageClas s: `img-fluid rounded `,
       checker: true
     };
     this.handleHover = this.handleHover.bind(this);
@@ -34,7 +34,7 @@ class About extends Component {
         className="row mx-0 justify-content-center text-white"
       >
         <div
-          className="container justify-content-between row mx-0 shadow pb-5 pt-5"
+          className="container justify-content-between row mx-0 shadow align-items-center pb-5 pt-5"
           style={{ backgroundColor: "#627b90" }}
         >
           <div className="col-md-3 ">
