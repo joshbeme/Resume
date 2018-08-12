@@ -14,14 +14,14 @@ let SkillsTreeMotion = props => {
   return (
     <div
       id="skillsTreeImg"
-      className="row mx-0 "
+      className="row-sm d-none d-md-block mx-0 "
       style={{ backgroundColor: "#63D081", display: "" }}
     >
       {" "}
       {console.log("tree")}
       <Motion
         id="skillz"
-        className=""
+        className="col-sm "
         style={{ x: spring(props.toggle ? distance() : 0) }}
       >
         {({ x }) => (

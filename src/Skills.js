@@ -13,6 +13,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 
+
 class Skills extends Component {
   constructor(props) {
     super(props);
@@ -118,9 +119,8 @@ class Skills extends Component {
          
         </div> */}
 
-<SkillsCode open={this.state.open}  />
-<ScrollAnimation animateIn='flipOutX'
-  afterAnimatedIn={(v)=>this.handleCode(v)} afterAnimatedOut={(v)=>this.handleCode(v)} ></ScrollAnimation>
+<SkillsCode open={this.state.open} visible={this.handleCode} />
+
 
         {/* <div
           className='row  d-flex justify-content-end mx-0'

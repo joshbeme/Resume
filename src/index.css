@@ -69,9 +69,9 @@ headImg{
   position: fixed;
 }
 #headHead{
-  height: 100vh;
+  height: 50vh;
   width: 100vh;
-  background-image: url("./assets/Head.jpg");
+  background-image: url("./assets/Header.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -81,11 +81,11 @@ headImg{
   background-attachment: fixed;
 }
 
-/* #About{
-  height: 120vh;
+ #About{
+  height: 50vh;
   vertical-align: top;
   
-} */
+} 
 #Experience{
   height: 120vh;
 }
@@ -104,3 +104,6 @@ hr {
 
   object-fit:scale-down;
 } */
+.bg-darker{
+  background-color: white;
+}
