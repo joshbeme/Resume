@@ -1,19 +1,14 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import UnmountClosed from "react-collapse";
 import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 
 
 
-let SkillsCodeColl = props => {
+let SkillsCodeMobile = (props) => {
+    let height = () => {return  document.querySelector('#skillsCode').clientHeight};
   return (
-    <UnmountClosed
-      className="col-md-8 px-5 d-none d-md-block mx-0 pt-3 border-0"
-      isOpened={props.isOpened}
-      style={{ backgroundColor: "", display: "" }}
-      id="skillsCode"
-    >
-      <div className="row mx-0 text-center" id="skillsCode1">
+    <div className='row d-none d-sm-block d-md-none mx-0' id='codeMobile'  style={{ backgroundColor:'#ffffff'  }}  >
+          <div className="row mx-0 text-center" id="skillsCode1">
         <div className="col-sm">
           <h3 id="codeText"><FaHtml5 /> HTML</h3>
           <p>- DOM</p>
@@ -44,7 +39,8 @@ let SkillsCodeColl = props => {
           <p>- Higher Order Components</p>
         </div>
       </div>
-    </UnmountClosed>
+    </div>
+
   );
 };
-export default SkillsCodeColl;
+export default SkillsCodeMobile;

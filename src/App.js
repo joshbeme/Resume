@@ -9,6 +9,8 @@ import Skills from "./Skills.js";
 import Foot from "./Footer.js";
 import SkillsHeader from "./SkillsHeader.js";
 import "./index.css";
+import SkillsCodeMobile from "./SkillsCodeMobile";
+
 
 class App extends Component {
   constructor(props){
@@ -24,18 +26,21 @@ class App extends Component {
   }
   render() {
     return (
+    
       <div id="main" className="container-fluid"  >
-        <Navi />
+      
+   
         <Heading />
 
         <About />
 
         <SkillsHeader />
         <Skills />
-
+        <SkillsCodeMobile />
         <Experience />
 
         <Foot />
+        <Navi />
       </div>
     );
   }

@@ -4,10 +4,9 @@ import SkillsTreeColl from "./SkillsTreeColl";
 import SkillsTreeMotion from "./SkillsTreeMotion";
 import OnVisible from 'react-on-visible';
 
-
 let SkillsTree = props => {
   return (
-    <div className="row-md mx-0">
+    <div className="row-md d-none d-md-block mx-0">
 
 <SkillsTreeColl isOpened={props.open} />
         <SkillsTreeMotion className="" toggle={props.open}  />

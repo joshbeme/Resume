@@ -7,7 +7,7 @@ import OnVisible from 'react-on-visible';
 let SkillsCode = props => {
   return (
     <div className="row stars twinkling mx-0">
-      <SkillsCodeColl isOpened={props.open} />
+      <SkillsCodeColl className='d-sm-none' isOpened={props.open} />
 
       <SkillsCodeMotion className="" toggle={props.open} />
       <OnVisible onChange={props.visible} > 

@@ -8,6 +8,8 @@ import Code from './assets/Code.png'
 import SkillsTreeMotion from './SkillsTreeMotion';
 import SkillsTreeColl from './SkillsTreeColl';
 import SkillsTree from './SkillsTree';
+import SkillsCodeMobile from './SkillsCodeMobile';
+
 
 
 
@@ -29,8 +31,11 @@ class Skills extends Component {
     });
   }
 
-  handleCode (cool){
-    cool ? this.setState({ open: !this.state.open }) : this.setState({ open: !this.state.open })
+  handleCode = (v) => {
+    if (v.onScreen){
+      this.setState({ open: !this.state.open })
+    }
+    else {this.setState({ open: !this.state.open })}
     
 
   };
@@ -114,9 +119,9 @@ class Skills extends Component {
          
         </div> */}
 
-<SkillsCode className='py-4' open={this.state.open} visible={this.handleCode} />
+<SkillsCode className='py-4 d-none' style={{display: 'none'}} open={this.state.open} visible={this.handleCode} />
 
-
+<SkillsCodeMobile className='d-none d-sm-block' style={{display: 'none'}} open={this.state.open} visible={this.handleCode} />
 
         {/* <div
           className='row  d-flex justify-content-end mx-0'
@@ -125,7 +130,7 @@ class Skills extends Component {
           {' '}
           <img alt='' id='skills2' className='img-fluid ' src={Treehouse} />{' '}
         </div> */}
-<SkillsTree className='py-4' open={this.state.open2} visible={this.handleTree} />
+<SkillsTree className='py-4 d-none' style={{display: 'none'}} open={this.state.open2} visible={this.handleTree} />
       </div>
     );
   }
