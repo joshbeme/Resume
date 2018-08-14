@@ -6,15 +6,15 @@ let NavAbout = props => {
     <div className="row  mx-0"
 >
 
-      <a
+      <button
         onClick={props.onClick}
         role="button"
-        href="#About"
+      
         className={`btn col ${props.display} navtext border-0 text-left `}
  >
       
         About
-      </a>
+      </button>
     </div>
   );
 };

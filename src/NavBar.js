@@ -40,6 +40,7 @@ this.setState({
     experience: this.off()
   }
 })
+document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });
   }
   about(){
     this.setState({
@@ -50,6 +51,7 @@ this.setState({
         experience: this.off()
       }
     })
+    document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });
   }
   skills(){
     this.setState({
@@ -60,6 +62,7 @@ this.setState({
         experience: this.off()
       }
     })
+    document.querySelector('#SkillCode').scrollIntoView({ behavior: 'smooth' });
   }
   experience(){
     this.setState({
@@ -70,12 +73,30 @@ this.setState({
         experience: this.on()
       }
     })
+    document.querySelector('#Experience').scrollIntoView({ behavior: 'smooth' });
+  }
+  handleAboutScroll(){
+
+    if (window.pageYOffset < 500 ){
+      return this.home;
+    }
+    else{
+      this.about
+    }
   }
 
   componentDidMount() {
-    const ele = document.getElementById('About');
-    const bound = ele.getBoundingClientRect();
-    console.log(bound.top)
+
+    window.addEventListener('scroll', ()=>{    if (window.pageYOffset < 500 ){
+      return this.home;
+    }
+    else{
+      this.about
+    }});
+
+
+  }
+  componentWillUnmount(){
 
   }
 

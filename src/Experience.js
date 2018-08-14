@@ -11,7 +11,7 @@ const Experience = () => {
       className="row-md pt-4 twinkling justify-content-center d-flex align-items-stretch"
       id="Experience"
     >
-      <div className="container rounded px-4 shadow" style={{ backgroundColor: "#4C656F" }}>
+      <div className="container rounded px-4 shadow bg-transparent" style={{ backgroundColor: "#4C656F" }}>
         {/* <div className="row-md mx-0">
         <h1 className="col-md display-3 d-auto text-center text-white">
           Experience
@@ -66,11 +66,11 @@ const Experience = () => {
             </p>
           </div>
         </div> */}
-          <div className="row justify-content-center mx-0" ><h1 className="text-center" >Experience</h1></div>
+          <div className="row justify-content-center mx-0 text-white" ><h1 className="text-center" >Experience</h1></div>
 
 
         <div className="row py-5 mx-0">
-          <div class="col">
+          <div class="col text-white">
             <h5 class="mt-0">Encore</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
             scelerisque ante sollicitudin. Cras purus odio, vestibulum in
@@ -91,7 +91,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="row py-5 mx-0">
+        <div className="row py-5 mx-0 text-white">
           <div class="col">
             <h5 class="mt-0">Target</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
@@ -111,7 +111,7 @@ const Experience = () => {
             />
           </div>
         </div>
-        <div className="row py-5 mx-0">
+        <div className="row py-5 mx-0 text-white">
           <div class="col">
             <h5 class="mt-0">Lyft</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus

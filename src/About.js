@@ -26,17 +26,20 @@ class About extends Component {
       });
     }
   }
+  componentWillMount(){
+   
+  }
 
   render() {
     return (
       <div
         id="About"
       
-        className="row mx-0 pt-3 bg-transparent twinkling justify-content-center text-white"
+        className="row  mx-0 pt-3 bg-transparent twinkling justify-content-center text-white"
       >
  
         <div
-          className="container rounded   justify-content-between row align-items-center mx-0 shadow pb-5 pt-5"
+          className="container rounded  bg-transparent justify-content-between row align-items-center mx-0 shadow pb-5 pt-5"
           style={{ backgroundColor: "#4C656F" }}
         >
           <div className="col-md-3 px-2">

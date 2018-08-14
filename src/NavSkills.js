@@ -5,15 +5,15 @@ let NavSkills = props => {
   return (
     <div className="row mx-0">
 
-    <a
+    <button
     onClick={props.onClick}
       role="button"
-      href="#Skills"
+     
       className={`btn navtext col ${props.display} border-0 text-left `}
 
     >
       Skills
-    </a>
+    </button>
   </div>
   );
 };

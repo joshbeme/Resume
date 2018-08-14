@@ -5,17 +5,17 @@ let NavHome = props => {
   return (
     <div className="row mx-0">
 
-      <a
+      <button
         onScroll={props.onScroll}
         onClick={props.onClick}
         id="buttonHome"
         role="button"
-        href="#Home"
+    
         className={`btn navtext col ${props.display} border-0 text-left `}
 
       >
         Home
-      </a>
+      </button>
     </div>
   );
 };
