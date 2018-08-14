@@ -33,18 +33,18 @@ class Navi extends Component {
       return off;
     }
     home() {
-      document.querySelector("#Home").scrollIntoView({ behavior: "smooth" });
+      document.querySelector("#Home").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     about() {
-      document.querySelector("#About").scrollIntoView({ behavior: "smooth" });
+      document.querySelector("#About").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     skills() {
-      document.querySelector("#SkillCode").scrollIntoView({ behavior: "smooth" });
+      document.querySelector("#Skills").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     experience() {
       document
         .querySelector("#Experience")
-        .scrollIntoView({ behavior: "smooth" });
+        .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     /* Handles scroll */
   handleAboutScroll() {
