@@ -33,9 +33,8 @@ class Heading extends Component {
   }
   render() {
     return (
-      <div class="bg-transparent stars twinkling pt-0 px-0 mx-0">
-      <div class="stars"></div>
-<div class="twinkling"></div>
+      <div class="bg-transparent pt-0 px-0 mx-0">
+
         <HeadingInfo
           collOne={this.state.collapse}
           collTwo={this.state.collapseAll}

@@ -8,10 +8,10 @@ import "./index.css";
 const Experience = () => {
   return (
     <div
-      className="row-md pt-4  justify-content-center d-flex align-items-stretch"
+      className="row-md pt-4 twinkling justify-content-center d-flex align-items-stretch"
       id="Experience"
     >
-      <div className="container rounded-top px-4 shadow" style={{ backgroundColor: "#4C656F" }}>
+      <div className="container rounded px-4 shadow" style={{ backgroundColor: "#4C656F" }}>
         {/* <div className="row-md mx-0">
         <h1 className="col-md display-3 d-auto text-center text-white">
           Experience
