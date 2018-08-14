@@ -4,6 +4,7 @@ import NavAbout from "./NavAbout.js";
 import NavSkills from "./NavSkills.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import NavExperience from "./NavExperience.js";
+import "./index.css";
 
 class Navi extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class Navi extends Component {
     }
     /* Handles scroll */
   handleAboutScroll() {
-    if (window.pageYOffset > 0 && window.pageYOffset < 236) {
+    if (window.pageYOffset > 0 && window.pageYOffset < 200) {
       this.setState({
         nav: {
           home: this.on(),
@@ -56,7 +57,7 @@ class Navi extends Component {
           experience: this.off()
         }
       });
-    } else if (window.pageYOffset > 236 && window.pageYOffset < 840) {
+    } else if (window.pageYOffset > 200 && window.pageYOffset < 820) {
       this.setState({
         nav: {
           home: this.off(),
@@ -65,7 +66,7 @@ class Navi extends Component {
           experience: this.off()
         }
       });
-    } else if (window.pageYOffset > 840 && window.pageYOffset < 1861) {
+    } else if (window.pageYOffset > 820 && window.pageYOffset < 1861) {
       this.setState({
         nav: {
           home: this.off(),
@@ -89,13 +90,15 @@ class Navi extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleAboutScroll);
   }
-  componentWillUnmount() {}
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleAboutScroll);
+  }
 
   render() {
     return (
-      <div className="row bg-transparent fixed-top mx-0 pl-4  ">
+      <div className="row bg-transparent fixed-top mx-0 pl-4 navbutts ">
         <div
-          className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
+          className="col-1 navbutts btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
           id="nav"
         >
           <NavHome

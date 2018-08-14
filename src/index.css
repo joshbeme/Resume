@@ -1,5 +1,7 @@
+
 html{
   z-index: 0;
+  outline: none;
 }
 .row {
   padding-right: 0px !important;
@@ -171,3 +173,32 @@ height: 100%;
 animation:move-twink-back 200s linear infinite;
 }
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+div:focus,
+div:active,
+div:hover,
+.navbutts,
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+.btn,
+button,
+textarea,
+input,
+div,
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+}
