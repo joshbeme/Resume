@@ -25,6 +25,10 @@ div{
   background-image: url("./assets/footer.jpg");
   height:50vh;
 }
+#footMobile{
+  background-image: url("./assets/footer.jpg");
+  height:100vh;
+}
 hr{
   color:"#FFFFFF";
   border-color: "#FFFFFF"
@@ -87,7 +91,6 @@ headImg{
 }
 #headHeadMobile{
   height: 100vh;
-  width: 100vh;
   background-image: url("./assets/Header.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -108,9 +111,7 @@ headImg{
   vertical-align: top;
   
 } 
-#Experience{
-  height: 100vh;
-}
+
 hr {
   height: 1px;
   color: #ffffff;

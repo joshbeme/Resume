@@ -77,7 +77,6 @@ class About extends Component {
 
 
   render(props) {
-    window.onresize = this.handleResize
     return (
       <div
         id={this.state.id}
@@ -85,7 +84,7 @@ class About extends Component {
         className="row  mx-0 pt-3 bg-transparent twinkling justify-content-center text-white "
       >
  
-        <div
+        <div id='ABO'
           className="container rounded  bg-transparent justify-content-between row align-items-center mx-0 shadow pb-5 pt-5"
           style={{ backgroundColor: "#4C656F" }}
         >

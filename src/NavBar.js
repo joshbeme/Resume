@@ -37,7 +37,7 @@ class Navi extends Component {
       document.querySelector("#Home").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     about() {
-      document.querySelector("#About").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      document.querySelector("#ABO").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     skills() {
       document.querySelector("#Skills").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
