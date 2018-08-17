@@ -23,7 +23,7 @@ class Navi extends Component {
     this.experience = this.experience.bind(this);
     this.handleAboutScroll = this.handleAboutScroll.bind(this);
   }
-  /* moves screen*/ 
+  /* Selects navbar */ 
     on() {
       let on = "bg-darker shadow";
       return on;
@@ -32,6 +32,7 @@ class Navi extends Component {
       let off = "bg-transparent";
       return off;
     }
+    /* moves screen*/ 
     home() {
       document.querySelector("#Home").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
@@ -96,9 +97,9 @@ class Navi extends Component {
 
   render() {
     return (
-      <div className="row bg-transparent fixed-top mx-0 pl-4 navbutts ">
+      <div className="row bg-transparent fixed-top mx-0 pl-4 ">
         <div
-          className="col-1 navbutts btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
+          className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
           id="nav"
         >
           <NavHome

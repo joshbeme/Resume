@@ -7,12 +7,14 @@ let HeadingInfo = props => {
       <div className="row mx-0 " id="img1">
         <Collapse isOpened={props.collOne}>
           <div id="Home" className="row text-white text-center mx-0 pt-4">
-            <h2 className="col display-3  ">Welcome to my Resume</h2>
+            <h2 className="col-sm display-3  ">Welcome to my Resume</h2>
           </div>
         </Collapse>
         <Collapse isOpened={props.collTwo}>
           <div className="row text-white text-center mx-0">
-            <h2 className="col">By Joshua Owens</h2>
+          <div className="col-sm" >
+            <h2 className="">By Joshua Owens</h2>
+            </div>
           </div>
         </Collapse>
       </div>

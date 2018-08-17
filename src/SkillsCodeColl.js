@@ -13,7 +13,7 @@ let SkillsCodeColl = props => {
       style={{ backgroundColor: "", display: "" }}
       id="skillsCode"
     >
-      <div className="row mx-0 text-center" id="skillsCode1">
+      <div className="row mx-0  text-center" id="skillsCode1">
         <div className="col-sm">
           <h3 id="codeText"><FaHtml5 /> HTML</h3>
           <p>- DOM</p>

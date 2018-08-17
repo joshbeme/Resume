@@ -24,6 +24,11 @@ const Foot = () => {
         <div className="container" >
         <hr/>
         </div>
+        <div className="row  justify-content-center mx-0 py-4" >
+          <p >
+            Email @ JoshmOwens70@gmail.com
+          </p>
+        </div>
       </div>
     </div>
   );

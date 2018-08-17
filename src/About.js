@@ -8,15 +8,18 @@ class About extends Component {
     super(props);
     this.state = {
       imageClass: `img-fluid rounded `,
-      checker: true
+      checker: true,
+      id: 'About'
     };
     this.handleHover = this.handleHover.bind(this);
+    this.handleMobile = this.handleMobile.bind(this);
+    this.handleComputer = this.handleComputer.bind(this);
   }
   handleHover() {
     
     if (this.state.checker) {
       this.setState({
-        imageClass: `img-fluid rounded  shadow-lg`,
+        imageClass: `img-fluid rounded animated pulse shadow-lg`,
         checker: !this.state.checker
       });
     } else {
@@ -26,16 +29,35 @@ class About extends Component {
       });
     }
   }
-  componentWillMount(){
-   
+  handleMobile(){
+    console.log('aboutmobile')
+    this.setState({
+      id: 'AboutMobile'
+    });
   }
+  handleComputer(){
+    console.log('aboutmobile')
+    this.setState({
+      id: 'About'
+    });
+  }
+  componentWillReceiveProps(nextProps){
+    console.log(nextProps.width)
+    if (nextProps.width < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+    }
+  }
+
 
   render() {
     return (
       <div
-        id="About"
+        id={this.state.id}
       
-        className="row  mx-0 pt-3 bg-transparent twinkling justify-content-center text-white"
+        className="row  mx-0 pt-3 bg-transparent twinkling justify-content-center text-white "
       >
  
         <div

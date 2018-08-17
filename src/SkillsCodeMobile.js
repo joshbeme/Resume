@@ -4,11 +4,10 @@ import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 
 
 
-let SkillsCodeMobile = (props) => {
-    let height = () => {return  document.querySelector('#skillsCode').clientHeight};
+let SkillsCodeMobile = () => {
   return (
-    <div className='row d-none d-sm-block d-md-none mx-0' id='codeMobile'  style={{ backgroundColor:'#ffffff'  }}  >
-          <div className="row mx-0 text-center" id="skillsCode1">
+    <div className='row  d-sm-block d-md-none mx-0 twinkling' id='codeMobile'    >
+          <div className="row mx-0 text-center" id="">
         <div className="col-sm">
           <h3 id="codeText"><FaHtml5 /> HTML</h3>
           <p>- DOM</p>

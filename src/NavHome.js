@@ -1,6 +1,7 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { IoIosHome } from "react-icons/io";
 
 let NavHome = props => {
   return (
@@ -15,7 +16,7 @@ let NavHome = props => {
         className={`btn navtext col ${props.display} border-0 text-left navbutts `}
 
       >
-        Home
+       <IoIosHome/> Home
       </button>
     </div>
   );
