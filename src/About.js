@@ -9,11 +9,13 @@ class About extends Component {
     this.state = {
       imageClass: `img-fluid rounded `,
       checker: true,
-      id: 'About'
+      id: 'About',
+      width: null,
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleMobile = this.handleMobile.bind(this);
     this.handleComputer = this.handleComputer.bind(this);
+    this.width = this.width.bind(this)
   }
   handleHover() {
     
@@ -41,18 +43,41 @@ class About extends Component {
       id: 'About'
     });
   }
+  handleResize(){
+    
+      try{
+      if (this.state.width < 751){
+        this.handleMobile()
+      }
+      else {
+       this.handleComputer()
+      }
+    }
+    catch(error){
+      console.error(error)
+    }
+  }
+  width = (x) => {
+    this.setState({
+      width: x,
+    })
+  }
+  
   componentWillReceiveProps(nextProps){
-    console.log(nextProps.width)
+    console.log(nextProps.width);
+    this.width(nextProps.width);
     if (nextProps.width < 751){
       this.handleMobile()
     }
     else {
      this.handleComputer()
-    }
+    };
+
   }
 
 
-  render() {
+  render(props) {
+    window.onresize = this.handleResize
     return (
       <div
         id={this.state.id}

@@ -85,6 +85,17 @@ headImg{
   z-index: 25;
   background-attachment: fixed;
 }
+#headHeadMobile{
+  width: 100vh;
+  background-image: url("./assets/Header.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 25;
+  background-attachment: fixed;
+}
 
  #About{
   height: 50vh;

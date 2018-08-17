@@ -26,7 +26,8 @@ this.componentDidMount = this.componentDidMount.bind(this)
     document.getElementById('main').addEventListener('scroll', ()=>{console.log('sup')});
     this.setState({
       width: document.querySelector('#Home').clientWidth,
-    })
+    });
+    
   }
   componentWillUnmount(){
     document.getElementById('main').removeEventListener('scroll');
@@ -41,7 +42,7 @@ this.componentDidMount = this.componentDidMount.bind(this)
       <div id="main" className="container-fluid stars"  >
       
    
-        <Heading />
+        <Heading width={this.state.width} />
 
         <About width={this.state.width} />
         <SkillsHeader />
@@ -49,8 +50,8 @@ this.componentDidMount = this.componentDidMount.bind(this)
         <SkillsCodeMobile />
         <Experience />
 
-        <Foot />
-        <Navi />
+        <Foot width={this.state.width}/>
+        <Navi width={this.state.width}/>
       </div>
     );
   }

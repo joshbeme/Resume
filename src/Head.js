@@ -8,10 +8,13 @@ class Heading extends Component {
     this.state = {
       collapse: false,
       dis: "none",
-      collapseAll: false
+      collapseAll: false,
+      id: null,
     };
     this.h1Move = this.h1Move.bind(this);
     this.hAllMove = this.hAllMove.bind(this);
+    this.handleMobile = this.handleMobile.bind(this);
+    this.handleComputer = this.handleComputer.bind(this);
   }
   h1Move() {
     this.setState({
@@ -31,6 +34,28 @@ class Heading extends Component {
 
     console.log(this.state.collapse);
   }
+  componentWillReceiveProps(nextProps){
+    console.log(nextProps.width);
+    if (nextProps.width < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+    };
+
+  }
+  handleMobile(){
+    console.log('HM')
+    this.setState({
+      id: 'headHeadMobile'
+    });
+  }
+  handleComputer(){
+    console.log('H')
+    this.setState({
+      id: 'headHead'
+    });
+  }
   render() {
     return (
       <div class="bg-transparent pt-0 px-0 mx-0">
@@ -38,6 +63,7 @@ class Heading extends Component {
         <HeadingInfo
           collOne={this.state.collapse}
           collTwo={this.state.collapseAll}
+          id={this.state.id}
         />
       </div>
     );
