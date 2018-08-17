@@ -87,7 +87,28 @@ class Navi extends Component {
       });
     }
   }
+  componentWillReceiveProps(nextProps){
+    console.log(nextProps.width);
+    if (nextProps.width < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+    };
 
+  }
+  handleMobile(){
+    console.log('NM')
+    this.setState({
+      id: 'headHeadMobile'
+    });
+  }
+  handleComputer(){
+    console.log('N')
+    this.setState({
+      id: 'headHead'
+    });
+  }
   componentDidMount() {
     window.addEventListener("scroll", this.handleAboutScroll);
   }
