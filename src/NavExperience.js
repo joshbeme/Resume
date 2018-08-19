@@ -6,16 +6,18 @@ import { IoIosListBox } from "react-icons/io";
 let NavExperience = props => {
   return (
     <div className="row mx-0">
-<div className='col'>
+<div className='d-none d-md-block' >
       <button
         onClick={props.onClick}
-        role="button"
-     
-        className={`btn navtext col ${props.display} border-0 text-left navbutts `}
-
-
-      >
-       <IoIosListBox/> Experience
+   className={`btn ${props.display} navtext border-0 text-left navbutts `}>
+    <IoIosListBox/> Past
+      </button>
+      </div>
+      <div className=' d-md-none justify-content-center' >
+      <button
+        onClick={props.onClick}
+   className={`btn ${props.display} navtext border-0 navbutts mx-0`}>
+    <IoIosListBox/>
       </button>
       </div>
     </div>

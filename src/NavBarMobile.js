@@ -6,7 +6,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import NavExperience from "./NavExperience.js";
 import "./index.css";
 
-class Navi extends Component {
+class NaviMobile extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -87,28 +87,7 @@ class Navi extends Component {
       });
     }
   }
-  componentWillReceiveProps(nextProps){
-    console.log(nextProps.width);
-    if (nextProps.width < 751){
-      this.handleMobile()
-    }
-    else {
-     this.handleComputer()
-    };
 
-  }
-  handleMobile(){
-    console.log('NM')
-    this.setState({
-      id: 'headHeadMobile'
-    });
-  }
-  handleComputer(){
-    console.log('N')
-    this.setState({
-      id: 'headHead'
-    });
-  }
   componentDidMount() {
     window.addEventListener("scroll", this.handleAboutScroll);
   }
@@ -118,7 +97,7 @@ class Navi extends Component {
 
   render() {
     return (
-      <div className="row bg-transparent fixed-top mx-0 pl-4 ">
+      <div className="row bg-transparent d-md-none  fixed-top mx-0 ">
         <div
           className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
           id="nav"
@@ -140,4 +119,4 @@ class Navi extends Component {
   }
 }
 
-export default Navi;
+export default NaviMobile;

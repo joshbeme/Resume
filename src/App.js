@@ -10,6 +10,7 @@ import Foot from "./Footer.js";
 import SkillsHeader from "./SkillsHeader.js";
 import "./index.css";
 import SkillsCodeMobile from "./SkillsCodeMobile";
+import NaviMobile from "./NavBarMobile";
 
 
 
@@ -52,6 +53,7 @@ this.componentDidMount = this.componentDidMount.bind(this)
 
         <Foot width={this.state.width}/>
         <Navi width={this.state.width}/>
+        <NaviMobile width={this.state.width} />
       </div>
     );
   }
