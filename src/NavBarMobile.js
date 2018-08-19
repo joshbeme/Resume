@@ -58,7 +58,7 @@ class NaviMobile extends Component {
           experience: this.off()
         }
       });
-    } else if (window.pageYOffset > 200 && window.pageYOffset < 820) {
+    } else if (window.pageYOffset > 200 && window.pageYOffset < 1300) {
       this.setState({
         nav: {
           home: this.off(),
@@ -67,7 +67,7 @@ class NaviMobile extends Component {
           experience: this.off()
         }
       });
-    } else if (window.pageYOffset > 820 && window.pageYOffset < 1861) {
+    } else if (window.pageYOffset > 1300 && window.pageYOffset < 2500) {
       this.setState({
         nav: {
           home: this.off(),
@@ -76,7 +76,7 @@ class NaviMobile extends Component {
           experience: this.off()
         }
       });
-    } else if (window.pageYOffset > 1861) {
+    } else if (window.pageYOffset > 2500) {
       this.setState({
         nav: {
           home: this.off(),
