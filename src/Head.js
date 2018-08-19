@@ -27,13 +27,31 @@ class Heading extends Component {
       collapseAll: !this.state.collapseAll
     });
   }
+  resize(){
+    let width = document.querySelector('#Home').clientWidth;
+    if (width < 751){
+      this.handleMobile
+    }
+    else{
+      this.handleComputer
+    }
+  }
 
   componentDidMount() {
     setTimeout(this.h1Move, 1000);
     setTimeout(this.hAllMove, 1600);
 
     console.log(this.state.collapse);
+
+    // window.onresize(()=> { let width = document.querySelector('#Skills').clientWidth;
+    // if (width < 751){
+    //   this.handleMobile
+    // }
+    // else{
+    //   this.handleComputer
+    // }});
   }
+
   componentWillReceiveProps(nextProps){
     console.log(nextProps.width);
     if (nextProps.width < 751){
