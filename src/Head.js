@@ -9,7 +9,7 @@ class Heading extends Component {
       collapse: false,
       dis: "none",
       collapseAll: false,
-      id: null,
+      id: "headHead",
     };
     this.h1Move = this.h1Move.bind(this);
     this.hAllMove = this.hAllMove.bind(this);
@@ -42,6 +42,12 @@ class Heading extends Component {
     setTimeout(this.hAllMove, 1600);
 
     console.log(this.state.collapse);
+    if (window.innerWidth < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+  }}
 
     // window.onresize(()=> { let width = document.querySelector('#Skills').clientWidth;
     // if (width < 751){
@@ -50,11 +56,11 @@ class Heading extends Component {
     // else{
     //   this.handleComputer
     // }});
-  }
+ 
 
   componentWillReceiveProps(nextProps){
     console.log(nextProps.width);
-    if (nextProps.width < 751){
+    if (window.innerWidth < 751){
       this.handleMobile()
     }
     else {
@@ -76,7 +82,7 @@ class Heading extends Component {
   }
   render() {
     return (
-      <div class="bg-transparent pt-0 px-0 mx-0">
+      <div className="bg-transparent pt-0 px-0 mx-0">
 
         <HeadingInfo
           collOne={this.state.collapse}

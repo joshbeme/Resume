@@ -62,7 +62,14 @@ class About extends Component {
       width: x,
     })
   }
-  
+  componentDidMount(){
+    if (window.innerWidth < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+  }
+  }
   componentWillReceiveProps(nextProps){
     console.log(nextProps.width);
     this.width(nextProps.width);
