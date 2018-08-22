@@ -14,56 +14,63 @@ import SkillsCodeMobile from "./SkillsCodeMobile";
 import NaviMobile from "./NavBarMobile";
 import header from "./assets/Header.jpg";
 import cerritos from "./assets/Cerritos.jpg";
-import loader from './assets/Ball.svg'
+import loader from "./assets/Ball.svg";
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      width: null,
-    }
-this.componentDidMount = this.componentDidMount.bind(this)
+      width: null
+    };
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     // document.getElementById('main').addEventListener('scroll', ()=>{console.log('sup')});
     this.setState({
-      width: window.innerWidth,
+      width: window.innerWidth
     });
-    
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     // document.getElementById('main').removeEventListener('scroll');
-
   }
   render() {
     // const size ={
     //   width: document.querySelector('#Home').clientWidth,
     // }
-    const loading = (<div id='loader' className='row mx-0 justify-content-center align-center' ><div ><img src={loader} /></div><div>Loading...</div></div>);
-    const img = [header, cerritos]
+    const loading = (
+      <div id="loader" className="container-fluid row mx-0  "
+      style={{ backgroundColor: "#000000" }}>
+        <div
+          className="roow mx-0 align-self-center w-100 justify-content-center "
+          style={{ backgroundColor: "#000000" }}
+        >
+          <div className="row mx-0 justify-content-center">
+            <img src={loader} />
+          </div>
+          <div className="row mx-0 justify-content-center text-white">Loading...</div>
+        </div>
+      </div>
+    );
+    const img = [header, cerritos];
     return (
-      <Preload 
-      loadingIndicator={loading}
-      images={img}
-      autoResolveDelay={3000}
-      >
-{      <div id="main" className="container-fluid stars"  >
+      <Preload loadingIndicator={loading} images={img} autoResolveDelay={3000}>
+        {
+          <div id="main" className="container-fluid stars">
+            <Heading width={this.state.width} />
 
-   
-        <Heading width={this.state.width} />
+            <About width={this.state.width} />
+            <SkillsHeader />
+            <Skills />
+            <SkillsCodeMobile />
+            <Experience />
 
-        <About width={this.state.width} />
-        <SkillsHeader />
-        <Skills />
-        <SkillsCodeMobile />
-        <Experience />
-
-        <Foot width={this.state.width}/>
-        <Navi width={this.state.width}/>
-        <NaviMobile width={this.state.width} />
-       
-      </div> }</Preload>
+            <Foot width={this.state.width} />
+            <Navi width={this.state.width} />
+            <NaviMobile width={this.state.width} />
+          </div>
+        }
+      </Preload>
     );
   }
 }
