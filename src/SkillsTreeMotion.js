@@ -15,7 +15,7 @@ let SkillsTreeMotion = props => {
     <div
       id="skillsTreeImg"
       className="row-sm d-none d-md-block mx-0 "
-      style={{ backgroundColor: "#63D081", display: "" }}
+      style={{ backgroundColor: "", display: "" }}
     >
       {" "}
       {console.log("tree")}

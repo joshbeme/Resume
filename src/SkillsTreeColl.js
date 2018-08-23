@@ -10,7 +10,7 @@ let SkillsTreeColl = props => {
       style={{ backgroundColor: "", display: "" }}
       id="skillsTree"
     >
-      <div className="row px-4 mx-0 text-white text-center" id="skillsTree1">
+      <div className="row px-4 mx-0 text-center navtext" id="skillsTree1">
         <div className="col-sm ">
           <h3 id="">jQuery</h3>
           <p>- AJAX</p>

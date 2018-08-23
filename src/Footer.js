@@ -34,6 +34,14 @@ class Foot extends Component {
       id: 'foot'
     });
   }
+  componentDidMount(){
+    if (window.innerWidth < 751){
+      this.handleMobile()
+    }
+    else {
+     this.handleComputer()
+  }
+  }
   render(){
   return (
     <div id={this.state.id} className="row-md mx-0  text-white" stle={{backgroundColor:'#ffffff'}}>
@@ -55,7 +63,7 @@ class Foot extends Component {
         <div className="container" >
         <hr/>
         </div>
-        <div className="row  justify-content-center mx-0 pt-4" >
+        <div className="row text-secondary justify-content-center mx-0 pt-4" >
           <p >
             Email @ JoshmOwens70@gmail.com
           </p>

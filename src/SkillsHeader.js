@@ -8,7 +8,7 @@ let SkillsHeader = () => {
         className="container bg-transparent rounded-top row mx-0 text-white text-center "
     
       >
-        <div className='col mx-0' >
+        <div className='col navtexty mx-0' >
           <h1 id="Skills" className="display-3 ">
             Skills
           </h1>

@@ -42,7 +42,7 @@ class App extends Component {
       <div id="loader" className="container-fluid row mx-0  "
       style={{ backgroundColor: "#000000" }}>
         <div
-          className="roow mx-0 align-self-center w-100 justify-content-center "
+          className="row mx-0 align-self-center w-100 justify-content-center "
           style={{ backgroundColor: "#000000" }}
         >
           <div className="row mx-0 justify-content-center">
