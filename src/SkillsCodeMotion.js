@@ -1,5 +1,6 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 import { Motion, spring } from "react-motion";
 import Code from "./assets/Code.png";
 

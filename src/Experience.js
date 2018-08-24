@@ -2,7 +2,7 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import encore from "./assets/Encore.png";
 import target from "./assets/target.png";
-import lyft from "./assets/lyft.jpg";
+import lyft from "./assets/lyft.png";
 import "./index.css";
 
 const Experience = () => {

@@ -10,7 +10,7 @@ let NavExperience = props => {
       <button
         onClick={props.onClick}
    className={`btn ${props.display} navtext border-0 text-left navbutts `}>
-    <IoIosListBox/> Past
+    <IoIosListBox/> Experience
       </button>
       </div>
       <div className=' d-md-none justify-content-center' >

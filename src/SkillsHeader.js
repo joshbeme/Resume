@@ -5,10 +5,10 @@ let SkillsHeader = () => {
   return (
     <div className="row twinkling pt-4 mx-0 justify-content-center">
       <div
-        className="container pb-4 bg-transparent rounded-top row mx-0 text-white text-center "
+        className="container  bg-transparent rounded-top row mx-0 text-white text-center "
     
       >
-        <div className='col pb-4  mx-0' >
+        <div className='col   mx-0' >
           <h1 id="Skills" className="display-3 ">
             Skills
           </h1>

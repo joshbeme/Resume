@@ -16,6 +16,7 @@ class Skills extends Component {
     this.state = {
       open: false,
       open2: false,
+      imgClass: "img-fluid "
     };
     this.handleTree = this.handleTree.bind(this);
     this.handleCode = this.handleCode.bind(this);
@@ -29,10 +30,14 @@ class Skills extends Component {
 
   handleCode = (v) => {
     if (v.onScreen){
-      this.setState({ open: !this.state.open })
+      this.setState({ open: !this.state.open,
+        imgClass: "img-fluid animated bounce " })
     }
-    else {this.setState({ open: !this.state.open })}
-    
+    else {this.setState({ 
+      open: !this.state.open,
+      imgClass: "img-fluid animated bounce "
+    })}
+  
 
   };
 
@@ -60,11 +65,11 @@ class Skills extends Component {
 
 ;
     return (
-      <div  className='row-md my-0 mx-0 '>
+      <div  className='row-md my-0 mx-0 twinkling'>
 
 
 
-<SkillsCode className='py-4 ' open={this.state.open} visible={this.handleCode} />
+<SkillsCode className='py-4 ' classes={this.state.imgClass} open={this.state.open} visible={this.handleCode} />
 
 
 
