@@ -9,16 +9,15 @@ class About extends Component {
     this.state = {
       imageClass: `img-fluid rounded `,
       checker: true,
-      id: 'About',
-      width: null,
+      id: "About",
+      width: null
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleMobile = this.handleMobile.bind(this);
     this.handleComputer = this.handleComputer.bind(this);
-    this.width = this.width.bind(this)
+    this.width = this.width.bind(this);
   }
   handleHover() {
-    
     if (this.state.checker) {
       this.setState({
         imageClass: `img-fluid rounded animated pulse shadow-lg`,
@@ -31,67 +30,59 @@ class About extends Component {
       });
     }
   }
-  handleMobile(){
-    console.log('aboutmobile')
+  handleMobile() {
+    console.log("aboutmobile");
     this.setState({
-      id: 'AboutMobile'
+      id: "AboutMobile"
     });
   }
-  handleComputer(){
-    console.log('aboutmobile')
+  handleComputer() {
+    console.log("aboutmobile");
     this.setState({
-      id: 'About'
+      id: "About"
     });
   }
-  handleResize(){
-    
-      try{
-      if (this.state.width < 751){
-        this.handleMobile()
+  handleResize() {
+    try {
+      if (this.state.width < 751) {
+        this.handleMobile();
+      } else {
+        this.handleComputer();
       }
-      else {
-       this.handleComputer()
-      }
-    }
-    catch(error){
-      console.error(error)
+    } catch (error) {
+      console.error(error);
     }
   }
-  width = (x) => {
+  width = x => {
     this.setState({
-      width: x,
-    })
-  }
-  componentDidMount(){
-    if (window.innerWidth < 751){
-      this.handleMobile()
+      width: x
+    });
+  };
+  componentDidMount() {
+    if (window.innerWidth < 751) {
+      this.handleMobile();
+    } else {
+      this.handleComputer();
     }
-    else {
-     this.handleComputer()
   }
-  }
-  componentWillReceiveProps(nextProps){
+  componentWillReceiveProps(nextProps) {
     console.log(nextProps.width);
     this.width(nextProps.width);
-    if (nextProps.width < 751){
-      this.handleMobile()
+    if (nextProps.width < 751) {
+      this.handleMobile();
+    } else {
+      this.handleComputer();
     }
-    else {
-     this.handleComputer()
-    };
-
   }
-
 
   render(props) {
     return (
       <div
         id={this.state.id}
-      
         className="row  mx-0 pt-3 bg-transparent twinkling justify-content-center text-white "
       >
- 
-        <div id='ABO'
+        <div
+          id="ABO"
           className="container rounded  bg-transparent justify-content-between row align-items-center mx-0 shadow pb-5 pt-5"
           style={{ backgroundColor: "#4C656F" }}
         >
@@ -112,24 +103,19 @@ class About extends Component {
           <div className="col-md px-3">
             <div className="row-sm align-middle px-1 py-4">
               <span className="lead h-4">
-                I am a self taught and ambitious programmer looking to advance
-                my skills in web development. My goal is to become a full-stack
-                JavaScript developer with an expansive understandings of
-                multiple languages. After taking my first Java course at
-                Cerritos Community college in Norwalk I realized that I love
-                programming and I can learn much more if I go at the pace that I
-                want to. School was not The problem with this syntax is that a
-                different callback is created each time the LoggingButton
-                renders. In most cases, this is fine. However, if this callback
-                is passed as a prop to lower components, those components might
-                do an extra re-rendering. We generally recommend binding in the
-                constructor or using the class fields syntax, to avoid this sort
-                of performance problem.
+                I am a self taught and ambitious MERN-stack programmer looking
+                to advance my skills in web development. My plan is to learn
+                Stencil, Typescript, Angular, Django, and Python while I fine
+                tune my other abilities. After taking my first Java
+                course at Cerritos Community college in Norwalk I realized that
+                I love programming and I can learn much more if I go at the pace
+                that I want to. Even though I am in the early stages of
+                being a programmer I believe that in five years I will to be on
+                the bleeding edge of web development. 
               </span>
             </div>
           </div>
         </div>
-        
       </div>
     );
   }
