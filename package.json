@@ -14,7 +14,8 @@
     "react-motion": "^0.5.2",
     "react-on-visible": "^1.5.0",
     "react-scripts": "1.1.4",
-    "react-visibility-sensor": "^3.11.1"
+    "react-visibility-sensor": "^3.11.1",
+    "serve": "^10.0.0"
   },
   "scripts": {
     "start": "serve -s build -p 3000",
