@@ -10,7 +10,7 @@ import Skills from "./Skills.js";
 import Foot from "./Footer.js";
 import SkillsHeader from "./SkillsHeader.js";
 import "./index.css";
-import SkillsCodeMobile from "./SkillsCodeMobile";
+import SkillsMobile from "./SkillsCodeMobile";
 import NaviMobile from "./NavBarMobile";
 import header from "./assets/Header.jpg";
 import cerritos from "./assets/Cerritos.jpg";
@@ -62,7 +62,7 @@ class App extends Component {
             <About width={this.state.width} />
             <SkillsHeader />
             <Skills />
-            <SkillsCodeMobile />
+            <SkillsMobile />
             <Experience />
 
             <Foot width={this.state.width} />

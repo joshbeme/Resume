@@ -1,9 +1,8 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import UnmountClosed from "react-collapse";
-import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
-
-
+import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import SkillsCodeInfo from "./SkillsCodeInfo";
 
 let SkillsCodeColl = props => {
   return (
@@ -13,37 +12,7 @@ let SkillsCodeColl = props => {
       style={{ backgroundColor: "", display: "" }}
       id="skillsCode"
     >
-      <div className="row mx-0 text-white text-center px-5" id="skillsCode1">
-        <div className="col-sm">
-          <h3 id=""><FaHtml5 /> HTML</h3>
-          <p>- DOM</p>
-          <p>- Tags</p>
-          <p>- Properties</p>
-
-        </div>
-        <div className="col-sm">
-          <h3 id=""><FaCss3Alt/> CSS</h3>
-          <p>- Sass</p>
-          <p>- Flexbox</p>
-          <p>- CSS Grid</p>
-          <p>- Properties</p>
-        </div>
-        <div className="col-sm">
-          <h3 id=""><FaJsSquare/> JavaScript</h3>
-          <p>- DOM manipulation</p>
-          <p>- Object-oriented Programming</p>
-          <p>- Classes</p>
-          <p>- Fetch API</p>
-        </div>
-        <div className="col-sm">
-          <h3 id=""><FaReact/> React</h3>
-          <p>- JSX</p>
-          <p>- Stateless Components</p>
-          <p>- Stateful Components</p>
-          <p>- Lifecycle Methods</p>
-          <p>- Higher Order Components</p>
-        </div>
-      </div>
+      <SkillsCodeInfo />
     </UnmountClosed>
   );
 };

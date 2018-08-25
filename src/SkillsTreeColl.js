@@ -1,7 +1,7 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import UnmountClosed from "react-collapse";
-import { FaDollarSign, FaTwitter, FaNodeJs} from "react-icons/fa";
+import SkillsTreeInfo from "./SkillsTreeInfo";
 
 let SkillsTreeColl = props => {
   return (
@@ -11,30 +11,7 @@ let SkillsTreeColl = props => {
       style={{ backgroundColor: "", display: "" }}
       id="skillsTree"
     >
-      <div className="row px-4 mx-0 text-center text-white" id="skillsTree1">
-        <div className="col-sm ">
-          <h3 id=""><FaDollarSign/> jQuery</h3>
-          <p>- AJAX</p>
-          <p>- Events</p>
-          <p>- DOM Nodes</p>
-          <p>- Animations</p>
-        </div>
-        <div className="col-sm">
-          <h3 id=""><FaNodeJs/> Node.js</h3>
-          <p>- Command Line Server</p>
-          <p>- Node Packages</p>
-          <p>- Express</p>
-          <p>- MongoDB with Express</p>
-        </div>
-        <div className="col-sm ">
-          <h3 id=""><FaTwitter/> Bootstrap</h3>
-          <p>- Grids</p>
-          <p>- Components</p>
-          <p>- Utilities</p>
-          <p>- Flexbox</p>
-        </div>
-
-      </div>
+      <SkillsTreeInfo />
     </UnmountClosed>
   );
 };
