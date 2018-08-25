@@ -11,7 +11,10 @@ const Experience = () => {
       className="row-md pt-4 twinkling justify-content-center d-flex align-items-stretch"
       id="Experience"
     >
-      <div className="container rounded px-4 shadow bg-transparent" style={{ backgroundColor: "#4C656F" }}>
+      <div
+        className="container rounded px-4 shadow bg-transparent"
+        style={{ backgroundColor: "#4C656F" }}
+      >
         {/* <div className="row-md mx-0">
         <h1 className="col-md display-3 d-auto text-center text-white">
           Experience
@@ -66,21 +69,22 @@ const Experience = () => {
             </p>
           </div>
         </div> */}
-          <div className="row justify-content-center mx-0 text-white" ><h1 className="text-center" >Experience</h1></div>
-
+        <div className="row justify-content-center mx-0 text-white">
+          <h1 className="text-center">Experience</h1>
+        </div>
 
         <div className="row py-5 mx-0">
           <div class="col text-white">
             <h5 class="mt-0">Encore</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            Right now I am working on their website using wordpress and react to
+            enhance the user experience of the design they have now. This is a
+            General contracting company where I would help build cabinets and
+            redesign areas but now I am their freelance web developer.
             <p id="text" className="">
-              <small className="text-white">8/25/2015 – 9/4/2016</small>
+              <small className="text-white">1/10/2018 - Now</small>
             </p>
           </div>
-          
+
           <div class="col-2">
             <img
               id="expImg"
@@ -92,12 +96,10 @@ const Experience = () => {
         </div>
         <div className="row py-5 mx-0 text-white">
           <div class="col">
-            <h5 class="mt-0">Lyft</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-            vulputate fringilla. Donec lacinia congue felis in faucibus.
-            
+            <h5 class="mt-0">Lyft</h5>A Ride-sharing company that evaluated your
+            performance based on the customers input. While working for Lyft I
+            was given a rating of 4.9 stars which is higher than the average due
+            to my communitaction skills.
             <p id="text" className="">
               <small className="text-white">1/10/2018 - Now</small>
             </p>
@@ -114,12 +116,12 @@ const Experience = () => {
         <div className="row py-5 mx-0 text-white">
           <div class="col">
             <h5 class="mt-0">Target</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            At target I was part of the flexible fulfilment center. I also would
+            work as a sales floor representative because of my communication
+            skills. In flexible fulfilment I would find, package, and ship items
+            in a timely manner; this helped with my logistical abilities.
             <p id="text" className="">
-              <small className="text-white">8/25/2015 – 9/4/2016</small>
+              <small className="text-white">11/12/2016 – 1/10/2018</small>
             </p>
           </div>
           <div class="col-2">
@@ -131,7 +133,6 @@ const Experience = () => {
             />
           </div>
         </div>
-
       </div>
     </div>
   );

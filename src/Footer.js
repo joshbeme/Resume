@@ -4,6 +4,8 @@ import "./index.css";
 import git from "./assets/github.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import resume from "./assets/Resume.pdf"
+import { MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 class Foot extends Component {
   constructor(props) {
@@ -66,9 +68,9 @@ class Foot extends Component {
           <div className="container px-5">
             <hr />
           </div>
-          <div className="row  justify-content-center mx-0 py-4">
-            <a href="https://github.com/joshbeme">
-              <img alt="" src={git} id="git" className="" />
+          <div className="row  text-white justify-content-center mx-0 py-4">
+            <a className="text-white" href="https://github.com/joshbeme">
+            <FaGithub/> Github
             </a>
           </div>
           <div className="container">
@@ -76,7 +78,7 @@ class Foot extends Component {
           </div>
           <div className="row  justify-content-center mx-0 py-4">
 
-            <p>Email @ JoshmOwens70@gmail.com</p>
+            <p><MdEmail/> Email @ JoshmOwens70@gmail.com</p>
 
           </div>
 
