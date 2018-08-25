@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Collapse } from "react-collapse";
-import Preload from "react-preload";
+import Preload from "./react-preload/lib/index.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navi from "./NavBar.js";
 import Experience from "./Experience.js";

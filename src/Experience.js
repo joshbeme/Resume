@@ -90,27 +90,6 @@ const Experience = () => {
             />
           </div>
         </div>
-
-        <div className="row py-5 mx-0 text-white">
-          <div class="col">
-            <h5 class="mt-0">Target</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-            vulputate fringilla. Donec lacinia congue felis in faucibus.
-            <p id="text" className="">
-              <small className="text-white">8/25/2015 – 9/4/2016</small>
-            </p>
-          </div>
-          <div class="col-2">
-            <img
-              id="expImg"
-              class="pr-2 img-fluid "
-              src={target}
-              alt="Generic placeholder image"
-            />
-          </div>
-        </div>
         <div className="row py-5 mx-0 text-white">
           <div class="col">
             <h5 class="mt-0">Lyft</h5>
@@ -132,6 +111,27 @@ const Experience = () => {
             />
           </div>
         </div>
+        <div className="row py-5 mx-0 text-white">
+          <div class="col">
+            <h5 class="mt-0">Target</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+            scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+            vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <p id="text" className="">
+              <small className="text-white">8/25/2015 – 9/4/2016</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              id="expImg"
+              class="pr-2 img-fluid "
+              src={target}
+              alt="Generic placeholder image"
+            />
+          </div>
+        </div>
+
       </div>
     </div>
   );
