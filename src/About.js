@@ -105,7 +105,7 @@ class About extends Component {
               <span className="lead h-4">
                 I am a self taught and ambitious MERN-stack programmer looking
                 to advance my skills in web development. My plan is to learn
-                Stencil, Typescript, Angular, Django, and Python while I fine
+                SQL, Stencil, Typescript, Angular, Django, and Python while I fine
                 tune my other abilities. After taking my first Java
                 course at Cerritos Community college in Norwalk I realized that
                 I love programming and I can learn much more if I go at the pace
