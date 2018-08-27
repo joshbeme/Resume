@@ -9,12 +9,13 @@ class Heading extends Component {
       collapse: false,
       dis: "none",
       collapseAll: false,
-      id: "headHead",
+      id: "headHead"
     };
     this.h1Move = this.h1Move.bind(this);
     this.hAllMove = this.hAllMove.bind(this);
     this.handleMobile = this.handleMobile.bind(this);
     this.handleComputer = this.handleComputer.bind(this);
+    this.resizeHandling = this.resizeHandling.bind(this);
   }
   h1Move() {
     this.setState({
@@ -27,63 +28,64 @@ class Heading extends Component {
       collapseAll: !this.state.collapseAll
     });
   }
-  resize(){
-    let width = document.querySelector('#Home').clientWidth;
-    if (width < 751){
-      this.handleMobile
-    }
-    else{
-      this.handleComputer
-    }
+  handleMobile() {
+    this.setState({
+      id: "headHeadMobile"
+    });
+  }
+  handleComputer() {
+    this.setState({
+      id: "headHead"
+    });
+  }
+  resizeHandling ()  {
+  
+      let DeskOrMob = null;
+      if (window.innerWidth < 751) {
+        this.handleMobile();
+        return DeskOrMob
+      } else {
+        this.handleComputer();
+        
+      }
+      
+    
   }
 
   componentDidMount() {
     setTimeout(this.h1Move, 1000);
     setTimeout(this.hAllMove, 1600);
 
-    console.log(this.state.collapse);
-    if (window.innerWidth < 751){
-      this.handleMobile()
+   
+
+    if (window.innerWidth < 751) {
+      this.handleMobile();
+    } else {
+      this.handleComputer();
     }
-    else {
-     this.handleComputer()
-  }}
+  }
 
-    // window.onresize(()=> { let width = document.querySelector('#Skills').clientWidth;
-    // if (width < 751){
-    //   this.handleMobile
-    // }
-    // else{
-    //   this.handleComputer
-    // }});
- 
+  // window.onresize(()=> { let width = document.querySelector('#Skills').clientWidth;
+  // if (width < 751){
+  //   this.handleMobile
+  // }
+  // else{
+  //   this.handleComputer
+  // }});
 
-  componentWillReceiveProps(nextProps){
-    console.log(nextProps.width);
-    if (window.innerWidth < 751){
-      this.handleMobile()
+  componentWillReceiveProps(nextProps) {
+    if (window.innerWidth < 751) {
+      this.handleMobile();
+    } else {
+      this.handleComputer();
     }
-    else {
-     this.handleComputer()
-    };
+  }
 
-  }
-  handleMobile(){
-    console.log('HM')
-    this.setState({
-      id: 'headHeadMobile'
-    });
-  }
-  handleComputer(){
-    console.log('H')
-    this.setState({
-      id: 'headHead'
-    });
-  }
   render() {
+    window.onresize = this.resizeHandling;
+
     return (
       <div className="bg-transparent pt-0 px-0 mx-0">
-
         <HeadingInfo
           collOne={this.state.collapse}
           collTwo={this.state.collapseAll}

@@ -17,7 +17,6 @@ let SkillsCodeMotion = props => {
       style={{ backgroundColor: "", display: "" }}
     >
       {" "}
-      {console.log("motion")}
       <Motion
         id="skills1"
         className="col-sm"

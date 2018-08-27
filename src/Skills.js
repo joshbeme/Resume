@@ -4,7 +4,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import SkillsCode from './SkillsCode';
 
 import SkillsTree from './SkillsTree';
-import SkillsCodeMobile from './SkillsCodeMobile';
 
 
 
@@ -48,7 +47,7 @@ class Skills extends Component {
   };
   handleScroll(){
     if (!this.state.open){
-      this.handleTouchStart
+      this.handleTouchStart()
     }
     else{
       this.handleMouseDown()

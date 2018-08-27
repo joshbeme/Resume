@@ -9,13 +9,14 @@ class About extends Component {
     this.state = {
       imageClass: `img-fluid rounded `,
       checker: true,
-      id: "About",
+      id: "AboutMobile",
       width: null
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleMobile = this.handleMobile.bind(this);
     this.handleComputer = this.handleComputer.bind(this);
     this.width = this.width.bind(this);
+    this.resizeHandling = this.resizeHandling.bind(this)
   }
   handleHover() {
     if (this.state.checker) {
@@ -31,34 +32,33 @@ class About extends Component {
     }
   }
   handleMobile() {
-    console.log("aboutmobile");
     this.setState({
       id: "AboutMobile"
     });
   }
   handleComputer() {
-    console.log("aboutmobile");
     this.setState({
       id: "About"
     });
   }
-  handleResize() {
-    try {
-      if (this.state.width < 751) {
-        this.handleMobile();
-      } else {
-        this.handleComputer();
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  resizeHandling = () => {
+  
+    let DeskOrMob = null;
+    if (window.innerWidth < 751) {
+      DeskOrMob = this.handleMobile();
+    } else {
+      DeskOrMob = this.handleComputer();
+    };
+    return DeskOrMob
+  
+}
   width = x => {
     this.setState({
       width: x
     });
   };
   componentDidMount() {
+
     if (window.innerWidth < 751) {
       this.handleMobile();
     } else {
@@ -66,7 +66,6 @@ class About extends Component {
     }
   }
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps.width);
     this.width(nextProps.width);
     if (nextProps.width < 751) {
       this.handleMobile();
@@ -76,6 +75,8 @@ class About extends Component {
   }
 
   render(props) {
+    window.onresize = this.resizeHandling;
+
     return (
       <div
         id={this.state.id}
@@ -95,6 +96,7 @@ class About extends Component {
                   onMouseLeave={this.handleHover}
                   className={this.state.imageClass}
                   src={cerritos}
+                  alt=""
                 />
               </div>
             </div>

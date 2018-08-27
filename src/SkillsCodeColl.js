@@ -1,7 +1,6 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import UnmountClosed from "react-collapse";
-import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import SkillsCodeInfo from "./SkillsCodeInfo";
 
 let SkillsCodeColl = props => {

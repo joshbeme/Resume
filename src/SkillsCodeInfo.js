@@ -8,15 +8,15 @@ import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 let SkillsCodeInfo = props => {
   return (
 
-      <div className="row mx-0 text-white text-center px-5" id="skillsCode1">
-        <div className="col-sm text-center">
+      <div className="row mx-0 text-white justify-content-center text-center px-5" id="skillsCode1">
+        <div className="col-sm ">
           <h3 id=""><FaHtml5 /> HTML</h3>
           <p><MdPlusOne/> DOM</p>
           <p><MdPlusOne/> Tags</p>
           <p><MdPlusOne/> Attributes</p>
 
         </div>
-        <div className="col-sm text-center">
+        <div className="col-sm ">
           <h3 id=""><FaCss3Alt/> CSS</h3>
           <p><MdPlusOne/> Sass</p>
           <p><MdPlusOne/> Flexbox</p>

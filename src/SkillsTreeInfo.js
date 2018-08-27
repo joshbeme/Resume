@@ -6,7 +6,7 @@ import { MdPlusOne } from "react-icons/md";
 let SkillsTreeInfo = props => {
   return (
 
-      <div className="row px-4 mx-0 text-center text-white" id="skillsTree1">
+      <div className="row px-4 mx-0 justify-content-center text-center text-white" id="skillsTree1">
         <div className="col-sm ">
           <h3 id=""><FaDollarSign/> jQuery</h3>
           <p><MdPlusOne/> AJAX</p>

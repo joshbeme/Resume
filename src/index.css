@@ -55,9 +55,9 @@ hr{
   position: absolute;
   z-index: 50;
 }
-#skillsCode1{
-  
-  z-index: 75;
+
+#codeMobile{
+  transform: translateX(-5%)
 }
 /* #skillsCodeImg{
  

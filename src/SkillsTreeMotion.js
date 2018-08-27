@@ -19,7 +19,6 @@ let SkillsTreeMotion = props => {
       style={{ backgroundColor: "", display: "" }}
     >
       {" "}
-      {console.log("tree")}
       <Motion
         id="skillz"
         className="col-sm "

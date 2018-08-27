@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import git from "./assets/github.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import resume from "./assets/Resume.pdf"
 import { MdEmail } from "react-icons/md";
@@ -17,7 +16,6 @@ class Foot extends Component {
     this.handleComputer = this.handleComputer.bind(this);
   }
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps.width);
     if (nextProps.width < 751) {
       this.handleMobile();
     } else {
@@ -25,13 +23,11 @@ class Foot extends Component {
     }
   }
   handleMobile() {
-    console.log("FM");
     this.setState({
       id: "footMobile"
     });
   }
   handleComputer() {
-    console.log("F");
     this.setState({
       id: "foot"
     });

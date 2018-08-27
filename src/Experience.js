@@ -74,8 +74,8 @@ const Experience = () => {
         </div>
 
         <div className="row py-5 mx-0">
-          <div class="col text-white">
-            <h5 class="mt-0">Encore</h5>
+          <div className="col text-white">
+            <h5 className="mt-0">Encore</h5>
             Right now I am working on their website using wordpress and react to
             enhance the user experience of the design they have now. This is a
             General contracting company where I would help build cabinets and
@@ -85,18 +85,18 @@ const Experience = () => {
             </p>
           </div>
 
-          <div class="col-2">
+          <div className="col-2">
             <img
               id="expImg"
-              class="pr-2 img-fluid "
+              className="pr-2 img-fluid "
               src={encore}
-              alt="Generic placeholder image"
+              alt=""
             />
           </div>
         </div>
         <div className="row py-5 mx-0 text-white">
-          <div class="col">
-            <h5 class="mt-0">Lyft</h5>A Ride-sharing company that evaluated your
+          <div className="col">
+            <h5 className="mt-0">Lyft</h5>A Ride-sharing company that evaluated your
             performance based on the customers input. While working for Lyft I
             was given a rating of 4.9 stars which is higher than the average due
             to my communitaction skills.
@@ -104,18 +104,18 @@ const Experience = () => {
               <small className="text-white">1/10/2018 - Now</small>
             </p>
           </div>
-          <div class="col-2">
+          <div className="col-2">
             <img
               id="expImg"
-              class="pr-2 img-fluid "
+              className="pr-2 img-fluid "
               src={lyft}
-              alt="Generic placeholder image"
+              alt=""
             />
           </div>
         </div>
         <div className="row py-5 mx-0 text-white">
-          <div class="col">
-            <h5 class="mt-0">Target</h5>
+          <div className="col">
+            <h5 className="mt-0">Target</h5>
             At target I was part of the flexible fulfilment center. I also would
             work as a sales floor representative because of my communication
             skills. In flexible fulfilment I would find, package, and ship items
@@ -124,12 +124,12 @@ const Experience = () => {
               <small className="text-white">11/12/2016 – 1/10/2018</small>
             </p>
           </div>
-          <div class="col-2">
+          <div className="col-2">
             <img
               id="expImg"
-              class="pr-2 img-fluid "
+              className="pr-2 img-fluid "
               src={target}
-              alt="Generic placeholder image"
+              alt=""
             />
           </div>
         </div>

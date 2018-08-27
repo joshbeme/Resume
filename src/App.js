@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Collapse } from "react-collapse";
 import Preload from "./react-preload/lib/index.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navi from "./NavBar.js";
@@ -10,7 +9,7 @@ import Skills from "./Skills.js";
 import Foot from "./Footer.js";
 import SkillsHeader from "./SkillsHeader.js";
 import "./index.css";
-import SkillsMobile from "./SkillsCodeMobile";
+import SkillsMobile from "./SkillsMobile";
 import NaviMobile from "./NavBarMobile";
 import header from "./assets/Header.jpg";
 import cerritos from "./assets/Cerritos.jpg";
@@ -26,18 +25,13 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // document.getElementById('main').addEventListener('scroll', ()=>{console.log('sup')});
     this.setState({
       width: window.innerWidth
     });
   }
   componentWillUnmount() {
-    // document.getElementById('main').removeEventListener('scroll');
   }
   render() {
-    // const size ={
-    //   width: document.querySelector('#Home').clientWidth,
-    // }
     const loading = (
       <div id="loader" className="container-fluid row mx-0  "
       style={{ backgroundColor: "#000000" }}>
@@ -46,7 +40,7 @@ class App extends Component {
           style={{ backgroundColor: "#000000" }}
         >
           <div className="row mx-0 justify-content-center">
-            <img src={loader} />
+            <img src={loader} alt="" />
           </div>
           <div className="row mx-0 justify-content-center text-white">Loading...</div>
         </div>
