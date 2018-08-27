@@ -111,8 +111,7 @@ class About extends Component {
                 tune my other abilities. After taking my first Java
                 course at Cerritos Community college in Norwalk I realized that
                 I love programming and I can learn much more if I go at the pace
-                that I want to. Even though I am in the early stages of
-                being a programmer I believe that in five years I will to be on
+                that I want to. Even though I have only been programming for a year I believe that in three years I will be on
                 the bleeding edge of web development. 
               </span>
             </div>
