@@ -54,9 +54,15 @@ class App extends Component {
             <Heading width={this.state.width} />
 
             <About width={this.state.width} />
+            <div  className=" line mx-0">
+            <hr />
+          </div>
             <SkillsHeader />
             <Skills />
             <SkillsMobile />
+            <div className="line mx-0">
+            <hr />
+          </div>
             <Experience />
 
             <Foot width={this.state.width} />
