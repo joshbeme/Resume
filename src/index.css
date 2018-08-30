@@ -54,6 +54,7 @@ hr{
 #skillsCode{
   position: absolute;
   z-index: 50;
+  transform: translateX(4%)
 }
 
 #codeMobile{

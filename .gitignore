@@ -2,13 +2,13 @@
 
 # dependencies
 /node_modules
-/public
-/src
+
 # testing
 /coverage
 
 # production
-
+/public
+/src
 
 # misc
 .DS_Store
