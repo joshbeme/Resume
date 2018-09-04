@@ -16,7 +16,7 @@ class About extends Component {
     this.handleMobile = this.handleMobile.bind(this);
     this.handleComputer = this.handleComputer.bind(this);
     this.width = this.width.bind(this);
-    this.resizeHandling = this.resizeHandling.bind(this)
+    this.resizeHandling = this.resizeHandling.bind(this);
   }
   handleHover() {
     if (this.state.checker) {
@@ -42,23 +42,20 @@ class About extends Component {
     });
   }
   resizeHandling = () => {
-  
     let DeskOrMob = null;
     if (window.innerWidth < 751) {
       DeskOrMob = this.handleMobile();
     } else {
       DeskOrMob = this.handleComputer();
-    };
-    return DeskOrMob
-  
-}
+    }
+    return DeskOrMob;
+  };
   width = x => {
     this.setState({
       width: x
     });
   };
   componentDidMount() {
-
     if (window.innerWidth < 751) {
       this.handleMobile();
     } else {
@@ -105,14 +102,13 @@ class About extends Component {
           <div className="col-md px-3">
             <div className="row-sm align-middle px-1 py-4">
               <span className="lead h-4">
-                I am a self taught and ambitious MERN-stack programmer looking
-                to advance my skills in web development. My plan is to learn
-                SQL, Stencil, Typescript, Angular, Django, and Python while I fine
-                tune my other abilities. After taking my first Java
-                course at Cerritos Community college in Norwalk I realized that
-                I love programming and I can learn much more if I go at the pace
-                that I want to. Even though I have only been programming for a year I believe that in three years I will be on
-                the bleeding edge of web development. 
+                I am a self taught and ambitious MERN-stack (MongoDB,
+                Express.js, React.js, Node.js) programmer looking to advance my
+                skills in web development. After taking my first Java course in
+                college I realized that I love programming and I can learn much
+                more if I go at the pace that I want to. I have been programming
+                for a year and I believe that in three years I will be on the
+                bleeding edge of web development.
               </span>
             </div>
           </div>

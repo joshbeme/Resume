@@ -4,6 +4,8 @@ import "./index.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { IoIosDownload } from "react-icons/io";
+import Resume from './assets/Resume.pdf'
 
 class Foot extends Component {
   constructor(props) {
@@ -46,18 +48,13 @@ class Foot extends Component {
         stle={{ backgroundColor: "#ffffff" }}
       >
               
-          <ScrollAnimation animateIn="fadeInUp">
-          <div className="row  mx-0 justify-content-end">
-              <a className="text-white" href="https://drive.google.com/open?id=1Rddzn5EJf0yfgq0R8_OUjbIDyvOInEmK" download>Download Resume</a></div>
-            </ScrollAnimation>
+
         <div className="col text-white col-md py-4 my-4 mx-0">
           <div className="row  justify-content-center mx-0 py-4">
-            <a
-              className="text-white "
-              href="https://test-game-demo.herokuapp.com/"
-            >
-              Game Demo
-            </a>
+          <ScrollAnimation animateIn="fadeInUp">
+          <div className="row  mx-0 justify-content-center">
+              <a className="text-white" href={Resume} target='_blank'><IoIosDownload/>Download Resume<IoIosDownload/></a></div>
+            </ScrollAnimation>
 
           </div>
           <div className="container px-5">

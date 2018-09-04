@@ -99,7 +99,7 @@ class NaviMobile extends Component {
     return (
       <div className="row bg-transparent d-md-none  fixed-top mx-0 ">
         <div
-          className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
+          className="col-2  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
           id="nav"
         >
           <NavHome
