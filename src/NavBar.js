@@ -118,9 +118,9 @@ class Navi extends Component {
 
   render() {
     return (
-      <div className="row bg-transparent d-none d-md-block fixed-top mx-0 pl-4 ">
+      <div className="row bg-transparent d-none d-md-block fixed-top pt-5 mx-0 pl-4 ">
         <div
-          className="col-1  btn-group-vertical bg-transparent pt-5 mx-0 btn-sm "
+          className="col-1 btn-group-vertical bg-transparent rounded mx-0 btn-sm "
           id="nav"
         >
           <NavHome
