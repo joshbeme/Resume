@@ -102,7 +102,7 @@ class About extends Component {
           <div className="col-md px-3">
             <div className="row-sm align-middle px-1 py-4">
               <span className="lead h-4">
-                I am a self taught and ambitious MERN-stack (MongoDB,
+                I am a self taught MERN-stack (MongoDB,
                 Express.js, React.js, Node.js) programmer looking to advance my
                 skills in web development. After taking my first Java course in
                 college I realized that I love programming and I can learn much

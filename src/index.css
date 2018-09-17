@@ -194,9 +194,12 @@ div:focus,
 div:active,
 div:hover,
 .navbutts,
+.btn-group-vertical,
+.btn-group-vertical:focus
 {
-    outline:0px !important;
-    -webkit-appearance:none;
+  outline-style:none !important;
+    outline:none !important;
+    -webkit-appearance:none !important;
 }
 .btn,
 button,
@@ -204,8 +207,9 @@ textarea,
 input,
 div,
 {
+  
   outline:0px !important;
-  -webkit-appearance:none;
+  -webkit-appearance:none !important;
 }
 #loader{
   height: 100vh;
